@@ -5,10 +5,18 @@ import { useState, useEffect } from "react"
 import g6 from "./img/Group 6.svg"
 import g71 from "./img/Group 7.svg"
 import leaf_sun from "./img/leaf-sun.svg"
-import instagramIcon from "./img/instagram.svg"
-import discordIcon from "./img/discord.svg"
-import telegramIcon from "./img/telegram.svg"
-import twitterIcon from "./img/twitter.svg"
+
+import twitterIcon from "./img/twitterIcon.svg"
+import redditIcon from "./img/redditIcon.svg"
+import telegramIcon from "./img/telegramIcon.svg"
+import mediumIcon from "./img/mediumIcon.svg"
+import discordIcon from "./img/discordIcon.svg"
+import facebookIcon from "./img/facebookIcon.svg"
+import instagramIcon from "./img/instagramIcon.svg"
+import youtubuIcon from "./img/youtubuIcon.svg"
+import tiktokIcon from "./img/tiktokIcon.svg"
+import githubIcon from "./img/githubIcon.svg"
+
 import bonobo from "./img/bonobo.png"
 import heart_vector from "./img/heart.svg"
 import handshake_vector from "./img/handshake.svg"
@@ -32,6 +40,7 @@ import team1 from "./img/team1.png"
 import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
 import team4 from "./img/team4.png"
+import welcomeText from "./img/welcome.svg"
 import { Link } from 'react-scroll'
 
 function LandingPage2() {
@@ -103,7 +112,7 @@ function LandingPage2() {
                 spy={true}
                 smooth={true}
               >Marketing</Link></li>
-              <li className="main_tab_pointer"><Link
+              {/* <li className="main_tab_pointer"><Link
                 activeClass="active"
                 to="Roadmap"
                 spy={true}
@@ -114,7 +123,7 @@ function LandingPage2() {
                 to="Roadmap"
                 spy={true}
                 smooth={true}
-              >Charity</Link></li>
+              >Charity</Link></li> */}
               <li className="main_tab_pointer"><Link
                 activeClass="active"
                 to="Roadmap"
@@ -158,130 +167,34 @@ function LandingPage2() {
         <section>
           <div className="content">
             <div className="bonobo-content-card">
-              {/* <div className="menu">
-                <img className="logo" src={logo} alt="logo" />
-                <span className="menuButton open" onClick={openMenu}>
-                  ☰
-                </span>
-                <ul className="menutab">
-                  <li className="main_tab_pointer"><Link
-                    activeClass="active"
-                    to="BONOBO"
-                    spy={true}
-                    smooth={true}
-                  >Buy BONOBO</Link></li>
-                  <li className="main_tab_pointer"><Link
-                    activeClass="active"
-                    to="Tokenomics"
-                    spy={true}
-                    smooth={true}
-                  >Tokenomics</Link></li>
-                  <li className="main_tab_pointer"><Link
-                    activeClass="active"
-                    to="Roadmap"
-                    spy={true}
-                    smooth={true}
-                  >Roadmap</Link></li>
-                  <li className="main_tab_pointer">White Paper</li>
-                  <li className="main_tab_pointer"><div className="dropdown">
-                    <span className="dropbtn">Swing To</span>
-
-                    <div className="dropdown-content">
-                      <span className="drop_down_links">Rewards</span>
-                      <span className="drop_down_links">Cross Token Platform</span>
-                      <span className="drop_down_links">ScamScan</span>
-                      <span className="drop_down_links">Proof of Marketing</span>
-                      <span className="drop_down_links"><Link
-                        activeClass="active"
-                        to="Charity"
-                        spy={true}
-                        smooth={true}
-                      >Charity</Link></span>
-                      <span className="drop_down_links"><Link
-                        activeClass="active"
-                        to="Dashboard"
-                        spy={true}
-                        smooth={true}
-                      >Dashboard</Link></span>
-                      <span className="drop_down_links">Anti-Whale</span>
-                      <span className="drop_down_links"><Link
-                        activeClass="active"
-                        to="NFT"
-                        spy={true}
-                        smooth={true}
-                      >Comic NFT</Link></span>
-                      <span className="drop_down_links"><Link
-                        activeClass="active"
-                        to="team"
-                        spy={true}
-                        smooth={true}
-                      >Team</Link></span>
-                      <span className="drop_down_links">DAO</span>
-                    </div>
-
-                  </div></li>
-                </ul>
-                <ul className="mobilemenu" style={{ left: menuLeft + "px" }}>
-                  <li>
-                    <span className="menuButton" onClick={closeMenu}>
-                      ✖
-                    </span>
-                  </li>
-                  <li>
-                    <a href="buyBonobo">Buy BONOBO</a>
-                  </li>
-                  <li>
-                    <a href="tokenomics">Tokenomics</a>
-                  </li>
-                  <li>
-                    <a href="roadmap">Roadmap</a>
-                  </li>
-                  <li>
-                    <a href="story">White Paper</a>
-                  </li>
-                  <li><div className="dropdown">
-                    <span className="dropbtn2">Swing To</span>
-
-                    <div className="dropdown-content">
-                      <span className="drop_down_links">Rewards</span>
-                      <span className="drop_down_links">Cross Token Platform</span>
-                      <span className="drop_down_links">ScamScan</span>
-                      <span className="drop_down_links">Proof of Marketing</span>
-                      <span className="drop_down_links">Charity</span>
-                      <span className="drop_down_links">Dashboard</span>
-                      <span className="drop_down_links">Anti-Whale</span>
-                      <span className="drop_down_links">Comic NFT</span>
-                      <span className="drop_down_links">Team</span>
-                      <span className="drop_down_links">DAO</span>
-                    </div>
-
-                  </div></li>
-                </ul>
-              </div> */}
+              {/* <img src={welcomeText} className="welcomeText" />
               <div className="col-md-9 float-left">
-                <div className="bonobo-heading" id="BONOBO">
-                  <strong className="linear_gradient_font_color">WELCOME TO THE </strong>
-                  <h1 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">crypto</span> jungle</h1>
-                </div>
                 <div className="bonobo-content" >
-                  <p>
-                    BONOBO coin is fun and bold attempt to use cryptocurrency to
-                    improve the lives of both humans and our fellow inhabitants on
-                    earth, in a decentralized manner.
-                  </p>
-                  <p>
-                    It is also a social experiment that will test the ability of
-                    Distributed Anonymous Organizations (DAO) to perform their
-                    remits more effectively than traditional organizations.
-                  </p>
-                </div>
+                  <span className="worldText">
+                    The world’s first community driven marketing launchpad with scamscan auditing
+                  </span>
+                  <ul className="symbols">
+                    <li className="symbol mr17"><Link to={'https://twitter.com'}><img src={twitterIcon} /></Link></li>
+                    <li className="symbol mr17"><img src={redditIcon} /></li>
+                    <li className="symbol mr17"><img src={telegramIcon} /></li>
+                    <li className="symbol mr17"><img src={mediumIcon} /></li>
+                    <li className="symbol mr17"><img src={discordIcon} /></li>
+                    <li className="symbol mr17"><img src={facebookIcon} /></li>
+                    <li className="symbol mr17"><img src={instagramIcon} /></li>
+                    <li className="symbol mr17"><img src={youtubuIcon} /></li>
+                    <li className="symbol mr17"><img src={tiktokIcon} /></li>
+                    <li className="symbol mr17"><img src={githubIcon} /></li>
+                  </ul>
+                </div><br />
                 <div className="bonobo-button" >
-                  <button className="yellow-btn">BUY BONOBOS</button>
+                  <button className="yellow-btn">BUY NOW</button>
                 </div>
-              </div>
-              <div className="col-md-3 float-left">
+                <div className="mt30">I want to...</div>
+                <div>EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH ></div>
+              </div> */}
+              {/* <div className="col-md-3 float-left">
                 <img className="bonobo" src={bonobo} alt="bonobo" />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
