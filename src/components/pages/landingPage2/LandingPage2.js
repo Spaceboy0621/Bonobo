@@ -17,7 +17,7 @@ import leaf_sun from "./img/leaf-sun.svg"
 // import tiktokIcon from "./img/tiktokIcon.svg"
 // import githubIcon from "./img/githubIcon.svg"
 
-import bonobo from "./img/bonobo.png"
+// import bonobo from "./img/bonobo.png"
 import heart_vector from "./img/heart.svg"
 import handshake_vector from "./img/handshake.svg"
 import idea_vector from "./img/idea.svg"
@@ -40,7 +40,7 @@ import team1 from "./img/team1.png"
 import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
 import team4 from "./img/team4.png"
-import welcomeText from "./img/welcome.svg"
+// import welcomeText from "./img/welcome.svg"
 import { Link } from 'react-scroll'
 
 function LandingPage2() {
