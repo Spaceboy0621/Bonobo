@@ -6,18 +6,19 @@ import g6 from "./img/Group 6.svg"
 import g71 from "./img/Group 7.svg"
 import leaf_sun from "./img/leaf-sun.svg"
 
-// import twitterIcon from "./img/twitterIcon.svg"
-// import redditIcon from "./img/redditIcon.svg"
-// import telegramIcon from "./img/telegramIcon.svg"
-// import mediumIcon from "./img/mediumIcon.svg"
-// import discordIcon from "./img/discordIcon.svg"
-// import facebookIcon from "./img/facebookIcon.svg"
-// import instagramIcon from "./img/instagramIcon.svg"
-// import youtubuIcon from "./img/youtubuIcon.svg"
-// import tiktokIcon from "./img/tiktokIcon.svg"
-// import githubIcon from "./img/githubIcon.svg"
+import twitterIcon from "./img/twitterIcon.svg"
+import redditIcon from "./img/redditIcon.svg"
+import telegramIcon from "./img/telegramIcon.svg"
+import mediumIcon from "./img/mediumIcon.svg"
+import discordIcon from "./img/discordIcon.svg"
+import facebookIcon from "./img/facebookIcon.svg"
+import instagramIcon from "./img/instagramIcon.svg"
+import youtubuIcon from "./img/youtubuIcon.svg"
+import tiktokIcon from "./img/tiktokIcon.svg"
+import githubIcon from "./img/githubIcon.svg"
 
-// import bonobo from "./img/bonobo.png"
+import coins from "./img/coins.svg"
+import bonobo from "./img/bonobo.png"
 import heart_vector from "./img/heart.svg"
 import handshake_vector from "./img/handshake.svg"
 import idea_vector from "./img/idea.svg"
@@ -40,7 +41,7 @@ import team1 from "./img/team1.png"
 import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
 import team4 from "./img/team4.png"
-// import welcomeText from "./img/welcome.svg"
+import welcomeText from "./img/welcome.svg"
 import { Link } from 'react-scroll'
 
 function LandingPage2() {
@@ -167,7 +168,7 @@ function LandingPage2() {
         <section>
           <div className="content">
             <div className="bonobo-content-card">
-              {/* <img src={welcomeText} className="welcomeText" />
+              <img src={welcomeText} className="welcomeText" />
               <div className="col-md-9 float-left">
                 <div className="bonobo-content" >
                   <span className="worldText">
@@ -187,14 +188,15 @@ function LandingPage2() {
                   </ul>
                 </div><br />
                 <div className="bonobo-button" >
-                  <button className="yellow-btn">BUY NOW</button>
+                  <img src={coins} className="" />
+                  <button className="yellow-btn mr17 fleft">BUY NOW</button>
                 </div>
                 <div className="mt30">I want to...</div>
                 <div>EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH ></div>
-              </div> */}
-              {/* <div className="col-md-3 float-left">
+              </div>
+              <div className="col-md-3 float-left">
                 <img className="bonobo" src={bonobo} alt="bonobo" />
-              </div> */}
+              </div>
             </div>
           </div>
         </section>
@@ -251,7 +253,7 @@ function LandingPage2() {
             <div className="media-block float-left">
               <span className="heading linear_gradient_font_color">Get in <span className="linear_gradient_font_color2">touch</span></span>
               <br />
-              {/* <a href="https://t.me/elbonobo_directory" target="blank">
+              <a href="https://t.me/elbonobo_directory" target="blank">
                 <img src={telegramIcon} alt="telegram-icon" />
               </a>
               <a href="https://discord.gg/cpyHNheF4Y" target="blank">
@@ -262,7 +264,7 @@ function LandingPage2() {
               </a>
               <a href="https://twitter.com/ElBonoboCoin" target="blank">
                 <img src={instagramIcon} alt="instagram-icon" />
-              </a> */}
+              </a>
             </div>
             <div className="email-block float-left">
               <p>Get exclusive updates and community announcements:</p>
