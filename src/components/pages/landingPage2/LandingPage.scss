@@ -41,9 +41,14 @@
 }
 .float-left {
   float: left;
+  position: relative;
   @media (max-width: 767px) {
     float: none;
   }
+}
+
+.pt290{
+  padding-top: 19vw;
 }
 .float-right {
   float: right;
@@ -101,6 +106,20 @@
   list-style: none;
   margin-top: 1.9765739385065886vw;
 }
+.iwant{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+.lastText{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
 ol, ul {
   padding-left: 0;
 }
@@ -109,6 +128,12 @@ ol, ul {
 }
 .symbol{
   float: left;
+}
+.welcomeText{
+  margin-top: 7.979502196193265vw;
+}
+.mt27{
+  margin-top: 1.9765739385065886vw;
 }
 .menu {
   height: 5.84vw;

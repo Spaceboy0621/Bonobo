@@ -168,34 +168,35 @@ function LandingPage2() {
         <section>
           <div className="content">
             <div className="bonobo-content-card">
-              <img src={welcomeText} className="welcomeText" />
+              
               <div className="col-md-9 float-left">
+              <img src={welcomeText} alt="welcomeText" className="welcomeText" />
                 <div className="bonobo-content" >
                   <span className="worldText">
                     The world’s first community driven marketing launchpad with scamscan auditing
                   </span>
                   <ul className="symbols">
-                    <li className="symbol mr17"><Link to={'https://twitter.com'}><img src={twitterIcon} /></Link></li>
-                    <li className="symbol mr17"><img src={redditIcon} /></li>
-                    <li className="symbol mr17"><img src={telegramIcon} /></li>
-                    <li className="symbol mr17"><img src={mediumIcon} /></li>
-                    <li className="symbol mr17"><img src={discordIcon} /></li>
-                    <li className="symbol mr17"><img src={facebookIcon} /></li>
-                    <li className="symbol mr17"><img src={instagramIcon} /></li>
-                    <li className="symbol mr17"><img src={youtubuIcon} /></li>
-                    <li className="symbol mr17"><img src={tiktokIcon} /></li>
-                    <li className="symbol mr17"><img src={githubIcon} /></li>
+                    <li className="symbol mr17"><Link to={'https://twitter.com'}><img src={twitterIcon} alt="twitterIcon"/></Link></li>
+                    <li className="symbol mr17"><img src={redditIcon} alt="redditIcon"/></li>
+                    <li className="symbol mr17"><img src={telegramIcon} alt="telegramIcon"/></li>
+                    <li className="symbol mr17"><img src={mediumIcon} alt="mediumIcon"/></li>
+                    <li className="symbol mr17"><img src={discordIcon} alt="discordIcon"/></li>
+                    <li className="symbol mr17"><img src={facebookIcon} alt="facebookIcon"/></li>
+                    <li className="symbol mr17"><img src={instagramIcon} alt="instagramIcon"/></li>
+                    <li className="symbol mr17"><img src={youtubuIcon} alt="youtubuIcon"/></li>
+                    <li className="symbol mr17"><img src={tiktokIcon} alt="tiktokIcon"/></li>
+                    <li className="symbol mr17"><img src={githubIcon} alt="githubIcon"/></li>
                   </ul>
                 </div><br />
                 <div className="bonobo-button" >
-                  <img src={coins} className="" />
+                  <img src={coins} className="" alt="coins"/>
                   <button className="yellow-btn mr17 fleft">BUY NOW</button>
                 </div>
-                <div className="mt30">I want to...</div>
-                <div>EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH</div>
+                <div className="mt30 iwant">I want to...</div>
+                <div className="lastText mt27">EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH</div>
               </div>
               <div className="col-md-3 float-left">
-                <img className="bonobo" src={bonobo} alt="bonobo" />
+                <img className="bonobo pt290" src={bonobo} alt="bonobo" />
               </div>
             </div>
           </div>
