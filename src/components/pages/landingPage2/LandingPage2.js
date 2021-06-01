@@ -192,7 +192,7 @@ function LandingPage2() {
                   <button className="yellow-btn mr17 fleft">BUY NOW</button>
                 </div>
                 <div className="mt30">I want to...</div>
-                <div>EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH ></div>
+                <div>EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH</div>
               </div>
               <div className="col-md-3 float-left">
                 <img className="bonobo" src={bonobo} alt="bonobo" />
