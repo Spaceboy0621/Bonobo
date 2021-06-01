@@ -251,7 +251,7 @@ function LandingPage2() {
             <div className="media-block float-left">
               <span className="heading linear_gradient_font_color">Get in <span className="linear_gradient_font_color2">touch</span></span>
               <br />
-              <a href="https://t.me/elbonobo_directory" target="blank">
+              {/* <a href="https://t.me/elbonobo_directory" target="blank">
                 <img src={telegramIcon} alt="telegram-icon" />
               </a>
               <a href="https://discord.gg/cpyHNheF4Y" target="blank">
@@ -262,7 +262,7 @@ function LandingPage2() {
               </a>
               <a href="https://twitter.com/ElBonoboCoin" target="blank">
                 <img src={instagramIcon} alt="instagram-icon" />
-              </a>
+              </a> */}
             </div>
             <div className="email-block float-left">
               <p>Get exclusive updates and community announcements:</p>
