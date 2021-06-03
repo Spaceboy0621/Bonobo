@@ -1,6 +1,7 @@
 import React from "react"
 import "./LandingPage.scss"
 import { useState, useEffect } from "react"
+import Grid from '@material-ui/core/Grid';
 
 import g6 from "./img/Group 6.svg"
 import g71 from "./img/Group 7.svg"
@@ -16,6 +17,15 @@ import instagramIcon from "./img/instagramIcon.svg"
 import youtubuIcon from "./img/youtubuIcon.svg"
 import tiktokIcon from "./img/tiktokIcon.svg"
 import githubIcon from "./img/githubIcon.svg"
+import firstText from "./img/firstText.svg"
+import scamscan from "./img/scamscan.svg"
+import ape from "./img/ape.svg"
+import opensourse from "./img/opensourse.svg"
+import openknow from "./img/openknow.svg"
+import decent from "./img/decent.svg"
+import secondText from "./img/secondText.svg"
+import thirdText from "./img/thirdText.svg"
+import incGraph from "./img/increaseGraph.svg"
 
 import coins from "./img/coins.svg"
 import bonobo from "./img/bonobo.png"
@@ -173,7 +183,8 @@ function LandingPage2() {
               <img src={welcomeText} alt="welcomeText" className="welcomeText" />
                 <div className="bonobo-content" >
                   <span className="worldText">
-                    The world’s first community driven marketing launchpad with scamscan auditing
+                    <img src={firstText} alt="firstText" className="firstText" />
+                    {/* The world’s 1st community driven Marketing Launchpad with Decentralized Auditing */}
                   </span>
                   <ul className="symbols">
                     <li className="symbol mr17"><Link to={'https://twitter.com'}><img src={twitterIcon} alt="twitterIcon"/></Link></li>
@@ -189,11 +200,15 @@ function LandingPage2() {
                   </ul>
                 </div><br />
                 <div className="bonobo-button" >
-                  <img src={coins} className="" alt="coins"/>
-                  <button className="yellow-btn mr17 fleft">BUY NOW</button>
+                  <img src={scamscan} className="mr17" alt="scamscan"/>
+                  <img src={coins} className="mr17" alt="coins"/>
+                  <img src={ape} className="mr17" alt="ape"/>
                 </div>
-                <div className="mt30 iwant">I want to...</div>
-                <div className="lastText mt27">EARN ABOUT NEW TOKEN SCAMS > SHARE CONTENT > RESEARCH</div>
+                <div className="bonobo-button mt30" >
+                  <img src={opensourse} className="mr17" alt="opensourse"/>
+                  <img src={openknow} className="mr17" alt="openknow"/>
+                  <img src={decent} className="" alt="decent"/>
+                </div>
               </div>
               <div className="col-md-3 float-left">
                 <img className="bonobo pt290" src={bonobo} alt="bonobo" />
@@ -204,43 +219,7 @@ function LandingPage2() {
         <section>
           <div className="s2-bonobo-content-card float-left">
             <div className="content">
-              <strong className="linear_gradient_font_color">WHY</strong>
-              <h2 className="linear_gradient_font_color">Join <span className="linear_gradient_font_color2">El</span> Bonobo</h2>
-              <ul>
-                <li>
-                  We're building a vibrant community that is fun and comes
-                  together to improve their lives and those of others, whilst
-                  working to raise awareness and funds for wildlife conservation.
-                </li>
-                <li>
-                  A professional and talented team committed to making this vision
-                  a reality.
-                </li>
-                <li>
-                  Transparent technology implemented using best practice. There
-                  can be no "rug-pull".
-                </li>
-                <li>Tokenomics that make sense.</li>
-              </ul>
-              <p>
-                Holders of BONOBO automatically accrue their share of 3% of all
-                transaction fees and 3% goes towards conservation efforts of
-                endangered animals around the world.
-              </p>
-              <p>
-                <b>
-                  There future of El Bonobo is full DAO. Creating an effective
-                  conservation structure is the aim.
-                </b>
-              </p>
-              <p>
-                And the fun doesn't end there. A meme maker package is available
-                for creativity and humor. There is also a comic strip competition
-                where the winning strips are turned into NFT for the creator to
-                gain more rewards. Moreover, adventure and travel awaits those
-                that want to visit conservation efforts around the world.
-              </p>
-              <button className="yellow-btn">JOIN BONOBO</button>
+              <img src={secondText} className="" alt="secondText"/>
             </div>
           </div>
           <div className="imgs float-left">
@@ -250,37 +229,26 @@ function LandingPage2() {
           </div>
         </section>
         <div className="social-network-block">
-          <div className="content">
-            <div className="media-block float-left">
-              <span className="heading linear_gradient_font_color">Get in <span className="linear_gradient_font_color2">touch</span></span>
-              <br />
-              <a href="https://t.me/elbonobo_directory" target="blank">
-                <img src={telegramIcon} alt="telegram-icon" />
-              </a>
-              <a href="https://discord.gg/cpyHNheF4Y" target="blank">
-                <img src={discordIcon} alt="discord-icon" />
-              </a>
-              <a href="https://twitter.com/ElBonoboCoin" target="blank">
-                <img src={twitterIcon} alt="twitter-icon" />
-              </a>
-              <a href="https://twitter.com/ElBonoboCoin" target="blank">
-                <img src={instagramIcon} alt="instagram-icon" />
-              </a>
-            </div>
-            <div className="email-block float-left">
-              <p>Get exclusive updates and community announcements:</p>
-              <label>Enter your email:</label>
-              <br />
-              <input type="email" placeholder="Email" />
-              <button className="green-btn">Send</button>
-            </div>
+          <div className="flex-end">
+          <Grid container spacing={3}>
+            <Grid item xs={6} sm={4}>
+              <img src={thirdText} alt="thirdText" />
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <div className="align-center">
+                <button className="green-btn w180">Join</button>
+              </div>
+            </Grid>
+            <Grid item xs={6} sm={4}>
+              <img src={incGraph} alt="incGraph" />
+            </Grid>
+          </Grid>
           </div>
         </div>
         <section>
           <div className="content">
             <div className="s3-bonobo-heading-block">
-              <strong className="linear_gradient_font_color">SEE OUR</strong>
-              <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">Core</span> values</h2>
+              <h2 className="font-Somatic">Core values</h2>
             </div>
             <div className="s3-bonobo-main-block">
               <div className="card">
@@ -292,16 +260,11 @@ function LandingPage2() {
                   />
                 </div>
                 <div className="card-heading">
-                  <span>Giving</span>
+                  <span>Distributed</span>
                 </div>
                 <div className="card-content">
                   <p>
-                    El bonobo token is full of fun and games and sharing, we want
-                    everyone to make huge gains and have fun while doing it.
-                    However we are serious about helping out Bonobos and other
-                    primates in danger around the world. We welcome everyone to
-                    donate to El Bonobo Charity. El Bonobo community will decide
-                    where the Charity will go.
+                  Earn rewards by participating in ScamScan and Distributed Marketing and more. Community building by transcending the value of the platform through positive performance.
                   </p>
                 </div>
               </div>
@@ -314,15 +277,11 @@ function LandingPage2() {
                   />
                 </div>
                 <div className="card-heading">
-                  <span>Togetherness</span>
+                  <span>Democratic</span>
                 </div>
                 <div className="card-content">
                   <p>
-                    Our community of fun loving crypto swinging apes, are
-                    supportive and informative. Working together to help all apes
-                    get that bag! With &nbsp;
-                    <strong>Free Life Changer Raffles,&nbsp;</strong>
-                    everyone can enjoy El Bonobo's gifts.
+                  Building towards a fully Decentralized Autonomous Organization with fair participation equity. No owners, merit based curation and platform evolution on demand.
                   </p>
                 </div>
               </div>
@@ -331,21 +290,34 @@ function LandingPage2() {
                   <img src={idea_vector} className="idea-img" alt="idea_vector" />
                 </div>
                 <div className="card-heading">
-                  <span>Understanding</span>
+                  <span>Transparency</span>
                 </div>
                 <div className="card-content">
                   <p>
-                    Transparency and forward thinking pumps the blood in El
-                    Bonobo's heart. The future of El bonobo depends on community
-                    and committed long-term vision. Inquiries and ideas from all
-                    fellow apes are taken into account to evolve El Bonobo towards
-                    a sustainable future.
+                  Scalability requires transparency in all aspects of the platform. Accounting, decision making, open source code and open knowledge. This is the long term commitment towards a sustainable future.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        {/* <div className="social-network-block">
+          <div className="flex-end">
+            <Grid container spacing={3}>
+              <Grid item xs={6} sm={4}>
+                <img src={thirdText} alt="thirdText" />
+              </Grid>
+              <Grid item xs={6} sm={3}>
+                <div className="align-center">
+                  <button className="green-btn w180">Join</button>
+                </div>
+              </Grid>
+              <Grid item xs={6} sm={4}>
+                <img src={incGraph} alt="incGraph" />
+              </Grid>
+            </Grid>
+          </div>
+        </div> */}
         <section id="Tokenomics">
           <div className="container-fluid">
             <div className="heading row">
