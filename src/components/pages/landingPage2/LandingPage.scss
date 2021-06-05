@@ -1,10 +1,30 @@
+@font-face {
+  font-family: Somatic;
+  src: url(../../../assets/Somatic-Rounded.otf);
+}
+@font-face {
+  font-family: Nirmala;
+  src: url(../../../assets/Nirmala.ttf);
+}
+
+.somatic-font{
+  font-family: Somatic !important;
+}
+
+.nirmala-font{
+  font-family: Nirmala !important;
+}
 .main-block {
   padding-bottom: 19.35vw;
   background: #00392e;
 }
+.milestoneheader{
+  margin: 0 auto;
+    width: 55%;
+}
 .yellow-btn {
   padding: 0.8333vw 3.593vw;
-  font-family: "Gochi Hand", cursive;
+  font-family: somatic;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2987012987012987vw;
@@ -29,7 +49,7 @@
   bottom: 0px;
   position: relative;
 }
-.MuiGrid-root{
+.social-network-block .MuiGrid-root{
   align-items: flex-end;
 }
 
@@ -41,9 +61,13 @@
   font-size: 30px;
 }
 
+.fs72{
+  font-size: 72px;
+}
+
 .green-btn {
   height: 3.125vw;
-  font-family: "Gochi Hand", cursive;
+  font-family: Somatic;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2987012987012987vw;
@@ -76,9 +100,15 @@
     float: none;
   }
 }
+.MuiGrid-spacing-xs-3{
+  width: 100% !important;
+}
 .topmenu{
   background-color: #00A259;
   height: 100px;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
   .bonobo-header{
     color: #fff;
     padding: 0 18.3vw;
@@ -106,6 +136,10 @@
 .fs16{
   font-size: 16px;
 }
+
+.fs25{
+  font-size: 25px !important;
+}
 .mt30{
   margin-top: 30px;
 }
@@ -119,13 +153,17 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Gochi Hand", cursive;
+  font-family: somatic;
 
 }
 .symbols{
   list-style: none;
   margin-top: 1.9765739385065886vw;
 }
+.font-yellow{
+  color: #FCCF00;
+}
+
 .iwant{
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -154,6 +192,16 @@ ol, ul {
 }
 .mt27{
   margin-top: 1.9765739385065886vw;
+}
+
+.mt15{
+  margin-top: 15px;
+}
+.p40{
+  padding: 40px !important;
+}
+.bg-gray-green{
+  background-color: #015F4D !important;
 }
 .menu {
   height: 5.84vw;
@@ -243,6 +291,11 @@ ol, ul {
 html{
   height: 100%;
 }
+.joinBtn{
+  float: right;
+  width: 68% !important;
+  margin-top: 50px;
+}
 section:nth-child(1) {
   background: url("./img/s1.png") no-repeat, #015f4d no-repeat center center;
   width: 100%;
@@ -278,7 +331,7 @@ section:nth-child(1) {
       }
       h1 {
         color: #ffffff;
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         font-size: 8.3333vw;
@@ -353,7 +406,7 @@ section:nth-child(2) {
     }
     h2 {
       font-size: 5vw;
-      font-family: "Gochi Hand", cursive;
+      font-family: somatic;
       font-style: normal;
       font-weight: normal;
       line-height: 5.2vw;
@@ -448,7 +501,7 @@ section:nth-child(2) {
         }
       }
       .heading {
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         font-size: 3.2467532467532467vw;
@@ -541,7 +594,7 @@ section:nth-child(4) {
       color: #fff;
       strong {
         font-size: 1.2987012987012987vw;
-        font-family: "Montserrat", sans-serif;
+        font-family: Somatic;
         font-style: normal;
         font-weight: 800;
         line-height: 1.25vw;
@@ -551,7 +604,7 @@ section:nth-child(4) {
         }
       }
       h2 {
-        font-family: "Gochi Hand", cursive;
+        font-family: Somatic;
         font-style: normal;
         font-weight: normal;
         font-size: 5.411255411255412vw;
@@ -594,7 +647,7 @@ section:nth-child(4) {
         }
       }
       .card-heading {
-        font-family: "Montserrat", sans-serif;
+        font-family: Somatic;
         font-style: normal;
         font-weight: 800;
         font-size: 1.2987012987012987vw;
@@ -629,7 +682,7 @@ section:nth-child(4) {
         }
       }
       .card-content {
-        font-family: "Montserrat", sans-serif;
+        font-family: Nirmala;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -642,12 +695,15 @@ section:nth-child(4) {
     }
   }
 }
+.card-4{
+  background-color: #015F4D;
+}
 section:nth-child(5) {
-  background: url("./img/s5.png"), #005141 no-repeat center center;
+  background: url("./img/s5.svg"), #005141 no-repeat center center;
   background-size: 100% 100%;
   position: relative;
   width: 100%;
-  height: 72.708vw;
+  height: 61.708vw;
   padding: 7.2917vw 0 0 18.385vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
@@ -674,7 +730,7 @@ section:nth-child(5) {
       }
       h2 {
         font-size: 5.208vw;
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         line-height: 5.208vw;
@@ -688,7 +744,7 @@ section:nth-child(5) {
       color: #fff;
       margin-top: 2.604vw;
       .s5-bonobo-content-block-1 {
-        width: 41.458vw;
+        width: 28vw;
         display: inline-block;
         @media (max-width: 767px) {
           width: 100%;
@@ -710,7 +766,7 @@ section:nth-child(5) {
         .card-2,
         .card-3 {
           border-radius: 13px;
-          background-color: #005141;
+          background-color: #015F4D;
           font-size: 13px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
@@ -957,7 +1013,7 @@ section:nth-child(5) {
         margin: 2.08vw auto;
       }
       .txt-heading {
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-size: 3.125vw;
         line-height: 3.125vw;
         margin: 2.083vw 0 1.093vw 0;
@@ -1003,7 +1059,7 @@ section:nth-child(7) {
       color: #fff;
       div {
         .sub {
-          font-size: 1.25vw;
+          font-size: 2.4vw;
           line-height: 1.25vw;
           font-weight: 900;
           font-family: "Montserrat", sans-serif;
@@ -1015,7 +1071,7 @@ section:nth-child(7) {
         }
         .main {
           font-size: 5.208rem;
-          font-family: "Gochi Hand", cursive;
+          font-family: somatic;
           line-height: 5.208vw;
           margin-bottom: 1.042vw;
           @media (max-width: 767px) {
@@ -1103,7 +1159,7 @@ section:nth-child(8) {
   background-color: #005141;
   width: 100%;
   position: relative;
-  padding: 9.37vw 0 9vw 18.385vw;
+  padding: 3.37vw 0 3vw 18.385vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
     height: auto;
@@ -1123,7 +1179,7 @@ section:nth-child(8) {
         }
       }
       h2 {
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         font-size: 5.208vw;
@@ -1265,9 +1321,9 @@ section:nth-child(8) {
   }
 }
 section:nth-child(9) {
-  background: url("./img/s9.png") no-repeat, #015f4d no-repeat center center;
+  background: url("./img/s9.svg") no-repeat, #015f4d no-repeat center center;
   background-size: 100% 100%;
-  padding: 9.37vw 18.385vw 7.1vw 18.385vw;
+  padding: 1.37vw 18.385vw 7.1vw 18.385vw;
   height: auto;
   @media (max-width: 767px) {
     padding: 40px 20px;
@@ -1290,7 +1346,7 @@ section:nth-child(9) {
         }
         .main {
           font-size: 5.208vw;
-          font-family: "Gochi Hand", cursive;
+          font-family: somatic;
           @media (max-width: 767px) {
             font-size: 17.83vw;
           }
@@ -1306,7 +1362,7 @@ section:nth-child(9) {
         height: 100%;
         padding-top: 4.56vw;
         .card {
-          margin: 0 auto;
+          margin: 0;
           width: 14.27vw;
           position: relative;
           background: none;
@@ -1431,7 +1487,7 @@ section:nth-child(10) {
       }
       h2 {
         font-size: 5.208vw;
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         line-height: 5.208vw;
@@ -1520,7 +1576,7 @@ section:nth-child(11) {
         }
       }
       h2 {
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         font-size: 5.208vw;
@@ -1592,7 +1648,7 @@ section:nth-child(11) {
         }
       }
       h2 {
-        font-family: "Gochi Hand", cursive;
+        font-family: somatic;
         font-style: normal;
         font-weight: normal;
         font-size: 5.208vw;
@@ -1669,7 +1725,7 @@ section:nth-child(13) {
           }
         }
         h2 {
-          font-family: "Gochi Hand", cursive;
+          font-family: somatic;
           font-style: normal;
           font-weight: normal;
           font-size: 5.208vw;

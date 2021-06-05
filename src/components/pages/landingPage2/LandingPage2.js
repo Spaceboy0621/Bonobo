@@ -26,6 +26,10 @@ import decent from "./img/decent.svg"
 import secondText from "./img/secondText.svg"
 import thirdText from "./img/thirdText.svg"
 import incGraph from "./img/increaseGraph.svg"
+import s5_block1 from "./img/s5_block1.svg"
+import s5_block2 from "./img/s5_block2.svg"
+import conB from "./img/continueBtn.svg"
+import joinB from "./img/joinBtn.svg"
 
 import coins from "./img/coins.svg"
 import bonobo from "./img/bonobo.png"
@@ -178,7 +182,6 @@ function LandingPage2() {
         <section>
           <div className="content">
             <div className="bonobo-content-card">
-              
               <div className="col-md-9 float-left">
               <img src={welcomeText} alt="welcomeText" className="welcomeText" />
                 <div className="bonobo-content" >
@@ -229,7 +232,6 @@ function LandingPage2() {
           </div>
         </section>
         <div className="social-network-block">
-          <div className="flex-end">
           <Grid container spacing={3}>
             <Grid item xs={6} sm={4}>
               <img src={thirdText} alt="thirdText" />
@@ -239,16 +241,31 @@ function LandingPage2() {
                 <button className="green-btn w180">Join</button>
               </div>
             </Grid>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={3}>
               <img src={incGraph} alt="incGraph" />
             </Grid>
           </Grid>
-          </div>
         </div>
+        {/* <section></section> */}
+        {/* <div className="social-network-block">
+          <Grid container spacing={3}>
+            <Grid item xs={6} sm={4}>
+              <img src={thirdText} alt="thirdText" />
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <div className="align-center">
+                <button className="green-btn w180">Join</button>
+              </div>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <img src={incGraph} alt="incGraph" />
+            </Grid>
+          </Grid>
+        </div> */}
         <section>
           <div className="content">
             <div className="s3-bonobo-heading-block">
-              <h2 className="font-Somatic">Core values</h2>
+              <h2 className="somatic-font">Core values</h2>
             </div>
             <div className="s3-bonobo-main-block">
               <div className="card">
@@ -301,7 +318,8 @@ function LandingPage2() {
             </div>
           </div>
         </section>
-        {/* <div className="social-network-block">
+        
+        {/* <div className="social-network-bloc">
           <div className="flex-end">
             <Grid container spacing={3}>
               <Grid item xs={6} sm={4}>
@@ -321,133 +339,65 @@ function LandingPage2() {
         <section id="Tokenomics">
           <div className="container-fluid">
             <div className="heading row">
-              <strong className="linear_gradient_font_color">LEARN MORE ABOUT OUR</strong>
-              <h2 className="linear_gradient_font_color2">Tokenomics</h2>
+              <h2 className="somatic-font">Tokenomics</h2>
             </div>
             <div className="s5-bonobo-content-main-block">
-              <div className="s5-bonobo-content-block-1 float-left">
-                <div className="card-1">
-                  <div>
-                    <strong>10 %</strong>
-                    <span className="c">Transaction Fee (TX)</span>
+              <Grid container spacing={3}>
+                <Grid item xs={6} sm={5}>
+                  <div className="s5-bonobo-content-block-1">
+                    <img src={s5_block1} alt="s5_block1" />
+                    <img src={s5_block2} alt="s5_block2" />
                   </div>
-                  <div>
-                    <strong>3 %</strong>
-                    <span className="c1">auto distributed among holders</span>
-                  </div>
-                  <div>
-                    <strong>3%</strong>
-                    <span className="c1">Wildlife Conservation Fund</span>
-                  </div>
-                  <div>
-                    <strong>2 %</strong>
-                    <span className="c1">
-                      auto added to the liquidity pool and locked 3 years.
-                    </span>
-                  </div>
-                  <div>
-                    <strong>1 %</strong>
-                    <span className="c1">Project Fund</span>
-                  </div>
-                  <div>
-                    <strong>2 %</strong>
-                    <span className="c1">Burned</span>
-                  </div>
-                </div>
-                <div className="s5-bonobo-content-block-sub-child">
-                  <div className="card-2 ">
-                    <div className="card-heading">Max Supply</div>
-                    <div className="card-body">
-                      <div>
-                        <strong>Max Supply:</strong>
-                        <br />
-                        <span>100% - 7,900,000,000 Token</span>
+                </Grid>
+                <Grid item xs={6} sm={4}>
+                  <div className="s5-bonobo-content-block-2">
+                    <div className="bonobo-head-svg-block">
+                      <img className="face" src={bonobo_face_png} alt="bonobo_face" />
+                      <img
+                        className="monkey"
+                        src={bonobo_monkey_png}
+                        alt="bonobo_monkey"
+                      />
+                    </div> 
+                    <div className="card-1 p40 bg-gray-green">
+                      <div className="fs30 somatic-font">
+                        Total Supply - <span className="font-yellow">100%</span>
                       </div>
-                      <div>
-                        <strong>Public Supply:</strong>
-                        &nbsp;95%
-                        <br />
-                        &nbsp;&nbsp;&nbsp;Pre-sale: 20%
-                        <br />
-                        &nbsp;&nbsp;&nbsp;ILO: 75%
-                        <br />
+                      <div className="fs30 somatic-font">
+                        <span className="font-yellow">7,900,000,000</span> Token
                       </div>
-                      <div>
-                        <strong>Community Incentives:</strong>
-                        <span> &nbsp;5%</span>
+
+                      <div className="fs30 somatic-font mt15">
+                        Airdrop - <span className="font-yellow">20%</span>
+                      </div>
+                      <div className="fs30 somatic-font">
+                        <span className="font-yellow">1,580,000,000</span> Token
+                      </div>
+                      
+                      <div className="fs30 somatic-font mt15">
+                        Public Sale - <span className="font-yellow">62.56%</span>
+                      </div>
+                      <div className="fs30 somatic-font">
+                        <span className="font-yellow">4,942,240,000</span> Token
+                      </div>
+
+                      <div className="fs30 somatic-font mt15">
+                        Liquidity - <span className="font-yellow">15.64%</span>
+                      </div>
+                      <div className="fs30 somatic-font">
+                        <span className="font-yellow">1,235,560,000</span> Token
+                      </div>
+
+                      <div className="fs30 somatic-font mt15">
+                        Unicrypt Fee - <span className="font-yellow">1.8%</span>
+                      </div>
+                      <div className="fs30 somatic-font">
+                        <span className="font-yellow">142,200,000</span> Token
                       </div>
                     </div>
                   </div>
-                  <div className="card-3 ">
-                    <div className="card-heading">Token Release Schedule</div>
-                    <ul>
-                      <li>
-                        LP is released 3 years from lock date. After 3 years these
-                        funds are released with a set schedule to the team and/or
-                        DAO, whichever is in place.
-                      </li>
-                      <li>
-                        Team tokens are released according to a set schedule tbd
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="s5-bonobo-content-block-2 float-left">
-                <div className="bonobo-head-svg-block">
-                  <img className="face" src={bonobo_face_png} alt="bonobo_face" />
-                  <img
-                    className="monkey"
-                    src={bonobo_monkey_png}
-                    alt="bonobo_monkey"
-                  />
-                </div>
-                <div className="card-1">
-                  <div className="card-heading">Tokenomics Explanation</div>
-                  <p>
-                    When you purchase BONOBO Tokens, 10% is used as a transaction
-                    fee.
-                  </p>
-                  <ul>
-                    <li>
-                      <span>3%</span>
-                      &nbsp;is distributed to everyone that has a token, so that
-                      whenever someone transacts BONOBOs, you also get a
-                      percentage! The more BONOBOs you hold, the more rewards you
-                      receive.
-                    </li>
-                    <li>
-                      <span>2%</span> is added to the Liquidity Pool to better
-                      leverage BONOBO tokens. After 3 years these funds are
-                      released with a set schedule to the team and/or DAO,
-                      whichever is in place.
-                    </li>
-                    <li>
-                      <span>3%</span> goes to our Wildlife Conservation Fund of
-                      which the community works together in strategies to help
-                      animals in danger around the world.
-                    </li>
-                    <li>
-                      <span>1%</span> for development.
-                    </li>
-                    <li>
-                      <span>1%</span> is burned to lessen the total supply and
-                      increase the value of held tokens.
-                    </li>
-                  </ul>
-                  <p>There will only be 7,900,000,000 Tokens minted.</p>
-                  <ul>
-                    <li>
-                      <span>95%</span> is public supply, 20% of which will be
-                      available during pre-sale.
-                    </li>
-                    <li>
-                      <span>5%</span> is held to for the community to incentivize
-                      each other.
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                </Grid>
+              </Grid>
             </div>
           </div>
         </section>
@@ -498,8 +448,8 @@ function LandingPage2() {
           <div className="content">
             <div className="s5-bonobo-heading-block">
               <div>
-                <div className="sub linear_gradient_font_color">HOW TO BUY</div>
-                <div className="main linear_gradient_font_color2">Bonobo</div>
+                <div className="sub somatic-font">HOW TO BUY</div>
+                <div className="main omatic-font">El BONOBO’s</div>
               </div>
             </div>
             <div className="bonobo-content-block">
@@ -607,13 +557,12 @@ function LandingPage2() {
         </section>
         <section>
           <div className="content">
-            <div className="heading">
-              <strong className="linear_gradient_font_color">See our</strong>
-              <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">Milestones</span> Ticker</h2>
-              <p>
+            <div className="heading milestoneheader">
+              <h2 className="fs72 align-center">Milestones Ticker</h2>
+              <h6 className="fs30 align-center">
                 We implemented a concesus to visualize our Community Effort to
                 push elbonobo all over the internet (mark please update)
-              </p>
+              </h6>
             </div>
             <div className="card-flow">
               <div className="card-section" style={{ left: moveleft + "px" }}>
@@ -755,8 +704,7 @@ function LandingPage2() {
           <div className="content">
             <div className="s9-bonobo-heading-block">
               <div>
-                <div className="sub linear_gradient_font_color">OUR</div>
-                <div className="main linear_gradient_font_color2">Roadmap</div>
+                <div className="main somatic-font">Roadmap</div>
               </div>
             </div>
 
@@ -856,7 +804,7 @@ function LandingPage2() {
           </div>
         </section>
         <section id="Charity">
-          <div className="content">
+          {/* <div className="content">
             <div className="s10-bonobo-content-card float-left">
               <strong className="linear_gradient_font_color">MORE ABOUT</strong>
               <h2 className="linear_gradient_font_color2">Charity</h2>
@@ -902,7 +850,7 @@ function LandingPage2() {
             <div className="monkey float-right">
               <img src={monkeyy} alt="" />
             </div>
-          </div>
+          </div> */}
         </section>
         <section id="Dashboard">
           <div className="content">
@@ -960,57 +908,61 @@ function LandingPage2() {
           <div className="container-fluid">
             <div className="s13-bonobo-content-card float-left">
               <div>
-                <strong className="linear_gradient_font_color">MEET OUR</strong>
-                <h2 className="linear_gradient_font_color2">Team</h2>
-                <p>
-                  It is understandable that having a transparent team provides
-                  trust in a project. However this is a project that goes beyond
-                  the scope of traditional digital architects who want to create
-                  well intentioned social-impact designs. As this is a
-                  conservation project first and foremost, it would be within
-                  saviourism-complex to dox each current curator. We have
-                  therefore concluded that focusing on the technology, and mission
-                  goals are better than centralizing on the current curators. The
-                  project will speak for itself. This is also an opportunity for
-                  hard working community members online and on the ground to step
-                  up and be recognized as the real MVPs of the El Bonobo Project!
-                  We want to move to full DAO as soon as possible with the most
-                  capable and qualified team, not only participating online but
-                  also front line in conservations. These team members deserve to
-                  have their pictures in this section if they desire. You are our
-                  team. Your dedication and perseverance is worthwhile and
-                  recognized.
+                <h2 className="">Team</h2>
+                <span className="mt27 fs25 nirmala-font"><b>About us</b></span>
+                <br />
+                <br />
+                <p className="fs25 nirmala-font">
+                We are a team of independent, hardworking entrepreneurs from different expertise.
                 </p>
+                <p className="fs25 nirmala-font">
+                Who have no fear of pushing technological boundaries and transforming knowledge into reality. We are goal oriented, team centered, and non egocentric. 
+                </p>
+                <span className="mt27 fs25 nirmala-font"><b>Our KODEX</b></span>
+                <br />
+                <br />
+                <li className="fs25 nirmala-font">Be transparent</li>
+                <li className="fs25 nirmala-font">Community first</li>
+                <li className="fs25 nirmala-font">Democratic thinking</li>
+                <li className="fs25 nirmala-font">Open Source</li>
+                <li className="fs25 nirmala-font">Open Knowledge</li>
+                <li className="fs25 nirmala-font">Share and caring</li>
+                <li className="fs25 nirmala-font">Education first</li>
+                <li className="fs25 nirmala-font">Decentralized Thinking</li>
+                <li className="fs25 nirmala-font">Distributed Mindest</li>
+                <br />
+                <br />
+                <img src={conB} alt="conB" />
               </div>
             </div>
             <div className="s13-img-block float-left">
               <div className="fline">
-                <img src={team1} alt="" />
-                <strong>Name</strong>
-                <strong>Last Name</strong>
-                <p>Title</p>
+                <img src={team1} alt="team1" />
+                <strong>The</strong>
+                <strong>Developer</strong>
               </div>
-              <div>
+              <div className="mt30">
                 <img src={team2} alt="" />
-                <strong>Name</strong>
-                <strong>Last Name</strong>
-                <p>Title</p>
+                <strong>The</strong>
+                <strong>Campaign Manager</strong>
+                <strong>and Auditor</strong>
               </div>
               <div className="sline">
                 <img src={team3} alt="" />
-                <strong>Name</strong>
-                <strong>Last Name</strong>
-                <p>Title</p>
+                <strong>The Architect</strong>
+                <strong>and Researcher</strong>
               </div>
               <div className="sline">
-                <img src={team4} alt="" />
-                <strong>Name</strong>
-                <strong>Last Name</strong>
-                <p>Title</p>
+                <img src={team4} alt="team4" />
+                <strong>You</strong>
+                <img className="joinBtn" src={joinB} alt="joinB" />
               </div>
             </div>
           </div>
         </section>
+         <div className="social-network-bloc">
+          dsdfsdf
+        </div>
       </div>
     </div>
   )
