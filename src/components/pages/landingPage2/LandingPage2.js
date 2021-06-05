@@ -222,7 +222,7 @@ function LandingPage2() {
         <section>
           <div className="s2-bonobo-content-card float-left">
             <div className="content">
-              <img src={secondText} className="" alt="secondText"/>
+              <img src={secondText} className="secondText" alt="secondText"/>
             </div>
           </div>
           <div className="imgs float-left">
