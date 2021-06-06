@@ -14,8 +14,21 @@
 .nirmala-font{
   font-family: Nirmala !important;
 }
+.s2-bonobo-content-left-top{
+  width: 40rem;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.s2-bonobo-content-left-down{
+  width: 30rem;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .main-block {
-  padding-bottom: 19.35vw;
   background: #00392e;
 }
 .milestoneheader{
@@ -45,32 +58,62 @@
   text-align: center;
 }
 .w180{
-  width: 180px;
+  width: 11.25rem;
   bottom: 0px;
   position: relative;
 }
-.social-network-block .MuiGrid-root{
-  align-items: flex-end;
+.w100pro{
+  width: 100%;
+  
 }
-
 .fs24{
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .fs30{
-  font-size: 27px;
+  font-size: 1.688rem;
+}
+
+.fs40{
+  font-size: 2.5rem;
 }
 
 .fs72{
-  font-size: 72px;
+  font-size: 4.5rem !important;
+  @media (max-width: 767px) {
+    font-size: 2.5rem !important;
+  }
 }
 
+.w20rem{
+  width: 20rem;
+}
+
+.w25rem{
+  width: 25rem;
+}
+
+
+.w30rem{
+  width: 30rem;
+}
+
+.w10rem{
+  width: 10rem;
+}
+.s5-bonobo-mobile3{
+  font-size : 1.688rem;
+  @media (max-width: 767px) {
+    font-size: 0.8rem !important;
+    text-align: center;
+  }
+}
 .green-btn {
-  height: 3.125vw;
+  height: 1.814rem;
   font-family: Somatic;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.2987012987012987vw;
+  font-size: 1rem;
   text-align: center;
   background-color: #005141;
   border: none;
@@ -92,7 +135,10 @@
 }
 
 .pt290{
-  padding-top: 10vw;
+  padding-top: 16.538rem;
+  @media (max-width: 767px) {
+    padding-top: 1rem;
+  }
 }
 .float-right {
   float: right;
@@ -101,19 +147,32 @@
   }
 }
 .MuiGrid-spacing-xs-3{
-  width: 100% !important;
+    overflow-y: auto;
+    width: 80rem;
+    margin: 0 auto;
+}
+.MuiGrid-item{
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 .topmenu{
   background-color: #00A259;
-  height: 100px;
+  height: 6rem;
   width: 100%;
   z-index: 9999;
   position: fixed;
   .bonobo-header{
     color: #fff;
-    padding: 0 18.3vw;
+    width: 70rem;
+    margin: auto;
+    
+  }
+  @media (max-width: 767px) {
+    height: 3rem;
   }
 }
+
 .connectBtn{
   width: 125px;
   height: 31.82px;
@@ -134,14 +193,18 @@
 }
 
 .fs16{
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+.fs32{
+  font-size: 2rem;
 }
 
 .fs25{
   font-size: 25px !important;
 }
 .mt30{
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .fleft{
   float: left;
@@ -154,11 +217,26 @@
   font-size: 30px;
   line-height: 30px;
   font-family: somatic;
-
+  
 }
 .symbols{
   list-style: none;
-  margin-top: 1.9765739385065886vw;
+  margin-top: 1.688rem;
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+  li{
+    @media (max-width: 767px) {
+      width: 3rem;
+    }
+  }
+}
+.symbolimg{
+  cursor: pointer;
+  @media (max-width: 767px) {
+    width: 2.313rem;
+  }
 }
 .font-yellow{
   color: #FCCF00;
@@ -182,20 +260,44 @@ ol, ul {
   padding-left: 0;
 }
 .mr17{
-  margin-right: 1.2445095168374818vw;
+  margin-right: 1.063rem;
+}
+.mr5{
+  margin-right: 5px;
 }
 .symbol{
   float: left;
 }
 .welcomeText{
-  margin-top: 7.979502196193265vw;
+  margin-top: 6.812rem;
+  width: 40rem;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 .mt27{
-  margin-top: 1.9765739385065886vw;
+  margin-top: 1.688rem;
 }
-
+.cursor-hand{
+  cursor: pointer;
+}
+.borabtn{
+  width: 10rem;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.coinbtn{
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 0.6rem;
+  }
+}
 .mt15{
-  margin-top: 15px;
+  margin-top: 0.938rem;
 }
 .p40{
   padding: 40px !important;
@@ -203,34 +305,40 @@ ol, ul {
 .bg-gray-green{
   background-color: #015F4D !important;
 }
+
 .menu {
   height: 5.84vw;
+  padding: 0px;
+  left: 0;
+  margin-left: 3rem;
   @media (max-width: 767px) {
-    padding: 20px;
-    height: 22.84vw;
+    padding: 0px;
+    height: 42rem;
+    width: 40%;
   }
   .logo {
-    margin-top: 1.5vw;
-    width: 11.458vw;
+    margin-top: 1.3rem;
+    width: 13rem;
     @media (max-width: 767px) {
       float: left;
-      width: 50vw;
+      width: 11rem;
+      margin-top: 0.3rem;
     }
   }
   
   .menutab {
     float: right;
     list-style: none;
-    padding: 2.08333vw;
-    padding-top: 1.9vw;
+    padding: 2rem;
+    padding-top: 2.2rem;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     li {
       float: left;
-      font-size: 1.171303074670571vw;
+      font-size: 1rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 800;
-      margin-right: 1.45833vw;
+      margin-right: 1.091rem;
       &:last-child {
         margin-right: 0;
       }
@@ -241,9 +349,9 @@ ol, ul {
   }
   .mobilemenu {
     position: fixed;
-    left: 0;
+    left: -50px;
     top: 0;
-    width: 95vw;
+    width: 26rem;
     height: 100vh;
     background-color: #00392e;
     z-index: 99999;
@@ -251,13 +359,21 @@ ol, ul {
     list-style: none;
     font-size: 5.332vw;
     font-family: "Montserrat", sans-serif;
-    padding-top: 15.23vw;
+    padding-top: 2rem;
     transition: left 1s;
+    overflow-y: auto;
     @media (min-width: 768px) {
       display: none;
     }
+    @media (max-width: 767px) {
+      display: block;
+      width: 100%;
+    }
     li {
-      margin-bottom: 3.15vw;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-left: 1rem;
+      text-align: center;
       a {
         color: #fff;
         text-decoration: none;
@@ -267,6 +383,11 @@ ol, ul {
         padding-right: 2rem;
       }
     }
+  }
+}
+.firstText{
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 .menuButton {
@@ -281,18 +402,31 @@ ol, ul {
   }
   &.open {
     float: right;
-    top: 2.66vw;
+    top: 2.271rem;
     position: relative;
+    @media (max-width: 767px) {
+      top : 0.5rem;
+    }
   }
   @media (min-width: 768px) {
     display: none;
+  }
+  @media (max-width: 767px) {
+    margin-right: 4rem;
+    display: block;
+    right: 0;
+    position: fixed !important;
   }
 }
 html{
   height: 100%;
 }
 .secondText{
-  margin-top: -48px;
+  margin-top: -3rem;
+  width: 35rem;
+  @media (max-width: 767px) {
+    margin-top: 1rem;
+  }
 }
 .joinBtn{
   float: right;
@@ -301,10 +435,13 @@ html{
 }
 section:nth-child(1) {
   background: url("./img/s1.png") no-repeat, #015f4d no-repeat center center;
-  width: 100%;
-  height: 50vw;
-  // height: 80%;
+  @media (min-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+  height: 52.688rem;
   background-size: 100% 100%;
+  width: 100%;
   @media (max-width: 767px) {
     background-size: cover;
     height: auto;
@@ -327,10 +464,6 @@ section:nth-child(1) {
         font-weight: 800;
         line-height: 1.25vw;
         color: #ffffff;
-        @media (max-width: 767px) {
-          font-size: 5vw;
-          line-height: 2.92vw;
-        }
       }
       h1 {
         color: #ffffff;
@@ -365,36 +498,34 @@ section:nth-child(1) {
       }
     }
     .bonobo-button {
-      margin-top: 2.968vw;
+      margin-top: 2.534rem;
     }
     .bonobo {
-      width: 20.833vw;
-      // position: relative;
+      width: 17.786rem;
 
       @media (min-width: 768px) {
-        left: 2.083vw;
-        top: 13.125vw;
-      }
-      @media (max-width: 767px) {
-        width: 60.332vw;
-        top: 9.3vw;
+        left: 1.778rem;
       }
     }
   }
 }
 section:nth-child(2) {
-  background: #015f4d no-repeat center center;
+  background: #005141 no-repeat center center;
   position: relative;
   max-width: 100%;
   overflow-y: auto;
+  
   .s2-bonobo-content-card {
     width: 62.5%;
     color: #fff;
-    padding: 6.51vw 12.13vw 0 18.3vw;
+    padding: 5.558rem 0rem 0 18.624rem;
+    display: flex;
+    justify-content: center;
     @media (max-width: 767px) {
+      padding: 20px;
+      margin: 0 auto;
       text-align: center;
       width: 100%;
-      padding: 20px;
     }
     strong {
       font-size: 1.25vw;
@@ -463,7 +594,7 @@ section:nth-child(2) {
   }
   button {
     margin-top: 3.073vw;
-    @media (min-width: 768px) and (max-width: 1200px) {
+    @media (min-width: 768px) and (max-width: 767px) {
       margin-top: 0.073vw;
     }
   }
@@ -472,13 +603,50 @@ section:nth-child(2) {
   background-color: #fccf00;
   color: #fff;
   position: relative;
-  padding: 3.12vw 0 3.12vw 18.3vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
     text-align: center;
   }
+  .social-mobile{
+    @media (max-width: 767px) {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .social-pc{
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  .social-mobile2{
+    @media (max-width: 767px) {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .social-pc2{
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  .MuiGrid-root {
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 77rem;
+  }
   .content {
-    overflow-y: auto;
+    display: flex;
+    
     .media-block {
       display: inline-block;
       place-content: start;
@@ -701,13 +869,43 @@ section:nth-child(4) {
 .card-4{
   background-color: #015F4D;
 }
-section:nth-child(5) {
+
+#Tokenomics {
   background: url("./img/s5.svg"), #005141 no-repeat center center;
   background-size: 100% 100%;
   position: relative;
-  width: 100%;
-  height: 61.708vw;
-  padding: 7.2917vw 0 0 18.385vw;
+  
+  height: 50rem;
+  margin: 0 auto;
+
+  .s5-bonobo-mobile{
+    @media (max-width: 767px) {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .s5-bonobo-pc{
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: block;
+    }
+    ul{
+      list-style : none;
+      li{
+        float: left;
+      }
+    }
+  }
+  .s5-card{
+    border-radius: 13px;
+    background-color: #015F4D;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
   @media (max-width: 767px) {
     padding: 40px 20px;
     background-size: cover;
@@ -716,6 +914,11 @@ section:nth-child(5) {
   .container-fluid {
     font-family: "Montserrat", sans-serif;
     color: #fff;
+    margin: 0 auto;
+    width: 70rem;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
     .heading {
       @media (max-width: 767px) {
         text-align: center;
@@ -732,7 +935,6 @@ section:nth-child(5) {
         }
       }
       h2 {
-        font-size: 5.208vw;
         font-family: somatic;
         font-style: normal;
         font-weight: normal;
@@ -747,7 +949,7 @@ section:nth-child(5) {
       color: #fff;
       margin-top: 2.604vw;
       .s5-bonobo-content-block-1 {
-        width: 28vw;
+        width: 40rem;
         display: inline-block;
         @media (max-width: 767px) {
           width: 100%;
@@ -913,7 +1115,7 @@ section:nth-child(5) {
           padding: 2.08vw 1.56vw 0.08vw 1.56vw;
           margin-top: -21.93vw;
           width: 19.68vw;
-          margin-left: 2.5vw;
+          margin-left: 3.842rem;
           @media (max-width: 767px) {
             width: 90%;
             height: auto;
@@ -992,7 +1194,30 @@ section:nth-child(5) {
     }
   }
 }
-
+.bonobo-head-svg-block {
+  padding-left: 1.04vw;
+  @media (max-width: 767px) {
+    text-align: right;
+  }
+  .face {
+    width: 14.37vw;
+    position: relative;
+    z-index: 3;
+    @media (max-width: 767px) {
+      left: 9.6vw;
+      top: -8.13vw;
+    }
+  }
+  .monkey {
+    width: 25.26vw;
+    z-index: 0;
+    margin-top: -15.26vw;
+    margin-left: 5.104vw;
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+}
 .social-info-block {
   background: url("./img/info.png"), #00392e;
   width: 100%;
@@ -1158,7 +1383,7 @@ section:nth-child(7) {
     }
   }
 }
-section:nth-child(8) {
+section:nth-child(9) {
   background-color: #005141;
   width: 100%;
   position: relative;
@@ -1323,7 +1548,7 @@ section:nth-child(8) {
     }
   }
 }
-section:nth-child(9) {
+section:nth-child(8) {
   background: url("./img/s9.svg") no-repeat, #015f4d no-repeat center center;
   background-size: 100% 100%;
   padding: 1.37vw 18.385vw 7.1vw 18.385vw;
@@ -1455,7 +1680,7 @@ section:nth-child(9) {
     }
   }
 }
-section:nth-child(10) {
+section:nth-child(13) {
   background: #00392e no-repeat center center;
   background-size: 100%;
   padding: 0 0 9.37vw 18.385vw;
@@ -1695,7 +1920,7 @@ section:nth-child(11) {
     }
   }
 }
-section:nth-child(13) {
+#team {
   background: #015f4d;
   height: 61.45vw;
   padding: 0 0 0 18.385vw;
@@ -1850,10 +2075,6 @@ section:nth-child(14) {
   display: block;
 }
 
-// .dropdown-content .drop_down_links:hover {
-//   background-color: #ddd;
-// }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -1874,4 +2095,35 @@ section:nth-child(14) {
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.footer{
+  background-color: black;
+  height: 25rem;
+  width: 100%;
+  .content{
+    color: white;
+    padding-top: 3rem;
+    width: 70rem;
+    margin: 0 auto;
+  }
+}
+
+.footerP{
+  font-size: 1.6rem;
+}
+.footerUl{
+  list-style : none;
+  li{
+    float: left;
+    margin-right: 1rem;
+    span{
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.font-bold{
+  font-weight: bold;
 }

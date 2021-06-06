@@ -19,17 +19,20 @@ import tiktokIcon from "./img/tiktokIcon.svg"
 import githubIcon from "./img/githubIcon.svg"
 import firstText from "./img/firstText.svg"
 import scamscan from "./img/scamscan.svg"
+import scamMeter from "./img/scamMeter.svg"
+import scamscanimg from "./img/scamscanimg.svg"
 import ape from "./img/ape.svg"
 import opensourse from "./img/opensourse.svg"
 import openknow from "./img/openknow.svg"
 import decent from "./img/decent.svg"
-import secondText from "./img/secondText.svg"
 import thirdText from "./img/thirdText.svg"
 import incGraph from "./img/increaseGraph.svg"
 import s5_block1 from "./img/s5_block1.svg"
 import s5_block2 from "./img/s5_block2.svg"
+import s5_block4 from "./img/s5_block4.svg"
 import conB from "./img/continueBtn.svg"
 import joinB from "./img/joinBtn.svg"
+import ftitle from "./img/footertitle.svg"
 
 import coins from "./img/coins.svg"
 import bonobo from "./img/bonobo.png"
@@ -38,19 +41,10 @@ import handshake_vector from "./img/handshake.svg"
 import idea_vector from "./img/idea.svg"
 import bonobo_monkey_png from "./img/monkey.png"
 import bonobo_face_png from "./img/bonobo_face.png"
-import coin_svg from "./img/coin 2.svg"
-import speedometer_svg from "./img/speedometer1.svg"
-import S11 from "./img/s11.svg"
-import s12_1 from "./img/s12-1.svg"
-import s12_2 from "./img/s12-2.svg"
-import s12_3 from "./img/s12-3.png"
-import s12_4 from "./img/s12-4.svg"
-import s12_5 from "./img/s12-5.svg"
 import calendar_png from "./img/calendar.svg"
 import next_png from "./img/next.svg"
 import prev_png from "./img/prev.svg"
 import logo from "./img/logo.svg"
-// import monkeyy from "./img/10.png"
 import team1 from "./img/team1.png"
 import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
@@ -59,7 +53,7 @@ import welcomeText from "./img/welcome.svg"
 import { Link } from 'react-scroll'
 
 function LandingPage2() {
-  const [menuLeft, setMenu] = useState(-1 * document.body.clientWidth)
+  const [menuLeft, setMenu] = useState(-1 * document.body.clientWidth - 100)
 
   const [numLeft, setNum] = useState(0)
   const [winWidth, setWidth] = useState(document.body.clientWidth)
@@ -94,10 +88,11 @@ function LandingPage2() {
   }, [])
 
   const closeMenu = () => {
-    setMenu(-1 * document.body.clientWidth)
+    console.log(-1 * document.body.clientWidth - 100)
+    setMenu(-1 * document.body.clientWidth - 100)
   }
   const openMenu = () => {
-    setMenu(0)
+    setMenu(-50)
   }
   return (
     <div>
@@ -127,7 +122,7 @@ function LandingPage2() {
                 spy={true}
                 smooth={true}
               >Marketing</Link></li>
-              {/* <li className="main_tab_pointer"><Link
+              <li className="main_tab_pointer"><Link
                 activeClass="active"
                 to="Roadmap"
                 spy={true}
@@ -138,7 +133,7 @@ function LandingPage2() {
                 to="Roadmap"
                 spy={true}
                 smooth={true}
-              >Charity</Link></li> */}
+              >Charity</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
                 to="Roadmap"
@@ -158,21 +153,27 @@ function LandingPage2() {
             </ul>
             <ul className="mobilemenu" style={{ left: menuLeft + "px" }}>
               <li>
-                <span className="menuButton" onClick={closeMenu}>
+                <span className="cursor-hand" onClick={closeMenu}>
                   ✖
                 </span>
               </li>
               <li>
-                <a href="buyBonobo">Buy BONOBO</a>
+                <a href="buyBonobo">Whitepaper</a>
               </li>
               <li>
-                <a href="tokenomics">Tokenomics</a>
+                <a href="tokenomics">Roadmap</a>
               </li>
               <li>
-                <a href="roadmap">Roadmap</a>
+                <a href="roadmap">Marketing</a>
               </li>
               <li>
-                <a href="story">White Paper</a>
+                <a href="story">Adult Service</a>
+              </li>
+              <li>
+                <a href="roadmap">Charity</a>
+              </li>
+              <li>
+                <a href="story">Voting</a>
               </li>
             </ul>
           </div>
@@ -190,27 +191,27 @@ function LandingPage2() {
                     {/* The world’s 1st community driven Marketing Launchpad with Decentralized Auditing */}
                   </span>
                   <ul className="symbols">
-                    <li className="symbol mr17"><Link to={'https://twitter.com'}><img src={twitterIcon} alt="twitterIcon"/></Link></li>
-                    <li className="symbol mr17"><img src={redditIcon} alt="redditIcon"/></li>
-                    <li className="symbol mr17"><img src={telegramIcon} alt="telegramIcon"/></li>
-                    <li className="symbol mr17"><img src={mediumIcon} alt="mediumIcon"/></li>
-                    <li className="symbol mr17"><img src={discordIcon} alt="discordIcon"/></li>
-                    <li className="symbol mr17"><img src={facebookIcon} alt="facebookIcon"/></li>
-                    <li className="symbol mr17"><img src={instagramIcon} alt="instagramIcon"/></li>
-                    <li className="symbol mr17"><img src={youtubuIcon} alt="youtubuIcon"/></li>
-                    <li className="symbol mr17"><img src={tiktokIcon} alt="tiktokIcon"/></li>
-                    <li className="symbol mr17"><img src={githubIcon} alt="githubIcon"/></li>
+                    <li className="symbol"><Link to={'https://twitter.com'}><img className="symbolimg" src={twitterIcon} alt="twitterIcon"/></Link></li>
+                    <li className="symbol"><img className="symbolimg" src={redditIcon} alt="redditIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={telegramIcon} alt="telegramIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={mediumIcon} alt="mediumIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={discordIcon} alt="discordIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={facebookIcon} alt="facebookIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={instagramIcon} alt="instagramIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={youtubuIcon} alt="youtubuIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={tiktokIcon} alt="tiktokIcon"/></li>
+                    <li className="symbol"><img className="symbolimg" src={githubIcon} alt="githubIcon"/></li>
                   </ul>
                 </div><br />
                 <div className="bonobo-button" >
-                  <img src={scamscan} className="mr17" alt="scamscan"/>
-                  <img src={coins} className="mr17" alt="coins"/>
-                  <img src={ape} className="mr17" alt="ape"/>
+                  <img src={scamscan} className="mr17 coinbtn" alt="scamscan"/>
+                  <img src={coins} className="mr17 coinbtn" alt="coins"/>
+                  <img src={ape} className="mr17 coinbtn" alt="ape"/>
                 </div>
                 <div className="bonobo-button mt30" >
-                  <img src={opensourse} className="mr17" alt="opensourse"/>
-                  <img src={openknow} className="mr17" alt="openknow"/>
-                  <img src={decent} className="" alt="decent"/>
+                  <img src={opensourse} className="mr17 borabtn" alt="opensourse"/>
+                  <img src={openknow} className="mr17 borabtn" alt="openknow"/>
+                  <img src={decent} className="borabtn" alt="decent"/>
                 </div>
               </div>
               <div className="col-md-3 float-left">
@@ -222,19 +223,43 @@ function LandingPage2() {
         <section>
           <div className="s2-bonobo-content-card float-left">
             <div className="content">
-              <img src={secondText} className="secondText" alt="secondText"/>
+              {/* <img src={secondText} className="secondText" alt="secondText"/> */}
+              <div className="s2-bonobo-content-left-top">
+                <h1 className="somatic-font fs30">What is El Bonobo?</h1>
+                <p className="nirmala-font fs24">BONOBO coin is fun and bold attempt to use cryptocurrency to improve the lives of both humans and our fellow inhabitants on earth, in a decentralized manner. </p>
+                <br />
+                <p className="nirmala-font fs24">It is also a social experiment that will test the ability of 
+                Distributed Anonymous Organizations (DAO) to perform 
+                their remits more effectively than traditional organizations.</p>
+              </div>
+
+              <div className="s2-bonobo-content-left-down mt27">
+                <h1 className="somatic-font">Join us!</h1>
+                <li className="nirmala-font">We’re building a vibrant community that is fun and comes together to improve their lives and those of others, whilst working to raise awareness and funds for wildlife conservation. </li>
+                <br />
+                <li className="nirmala-font">A professional and talented team committed to making this vision a reality. </li>
+                <br />
+                <li className="nirmala-font">Transparent technology implemented using best practice. There can be no “rug-pull”. </li>
+                <br />
+                <li className="nirmala-font">Tokenomics that make sense.</li>
+                <br />
+
+                <p className="nirmala-font">There future of El Bonobo is full DAO. Creating an effective conservation structure is the aim.</p><br />
+                <p className="nirmala-font">And the fun doesn’t end there. A meme maker package is available for creativity and humor. There is also a comic strip competition where the winning strips are turned into NFT for the creator to gain more rewards. Moreover, adventure and travel awaits those that want to visit conservation efforts around the world.</p>
+              </div>
             </div>
           </div>
           <div className="imgs float-left">
-            <img src={g6} width="50%" alt="g6" />
-            <img src={g71} width="50%" alt="g7" />
-            <img className="leftsun" src={leaf_sun} width="100%" alt="leftsun" />
+            <img src={g6} width="50%" alt="g6" className="s2-bonobo-right-top1-img" />
+            <img src={g71} width="50%" alt="g7" className="s2-bonobo-right-top2-img" />
+            <img className="leftsun" src={leaf_sun} className="s2-bonobo-right-top3-img" width="100%" alt="leftsun" />
           </div>
         </section>
         <div className="social-network-block">
+          <div className="social-pc">
           <Grid container spacing={3}>
             <Grid item xs={6} sm={4}>
-              <img src={thirdText} alt="thirdText" />
+              <img src={thirdText} className="w20rem" alt="thirdText" />
             </Grid>
             <Grid item xs={6} sm={3}>
               <div className="align-center">
@@ -242,30 +267,21 @@ function LandingPage2() {
               </div>
             </Grid>
             <Grid item xs={6} sm={3}>
-              <img src={incGraph} alt="incGraph" />
+              <img src={incGraph} className="w10rem" alt="incGraph" />
             </Grid>
           </Grid>
+          </div>
+
+          <div className="social-mobile">
+            <img src={thirdText} className="w100pro" alt="thirdText" />
+            <button className="green-btn w100pro mt15">Join</button>
+            <img src={incGraph} className="w100pro mt15" alt="incGraph" />
+          </div>
         </div>
-        {/* <section></section> */}
-        {/* <div className="social-network-block">
-          <Grid container spacing={3}>
-            <Grid item xs={6} sm={4}>
-              <img src={thirdText} alt="thirdText" />
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <div className="align-center">
-                <button className="green-btn w180">Join</button>
-              </div>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <img src={incGraph} alt="incGraph" />
-            </Grid>
-          </Grid>
-        </div> */}
         <section>
           <div className="content">
             <div className="s3-bonobo-heading-block">
-              <h2 className="somatic-font">Core values</h2>
+              <h2 className="somatic-font w100pro fs72">Core values</h2>
             </div>
             <div className="s3-bonobo-main-block">
               <div className="card">
@@ -318,38 +334,44 @@ function LandingPage2() {
             </div>
           </div>
         </section>
-        
-        {/* <div className="social-network-bloc">
-          <div className="flex-end">
+        <div className="social-network-block">
+          <div className="social-pc2">
             <Grid container spacing={3}>
               <Grid item xs={6} sm={4}>
-                <img src={thirdText} alt="thirdText" />
+                <img src={scamscanimg} className="w20rem" alt="scamscanimg" />
               </Grid>
               <Grid item xs={6} sm={3}>
                 <div className="align-center">
                   <button className="green-btn w180">Join</button>
                 </div>
               </Grid>
-              <Grid item xs={6} sm={4}>
-                <img src={incGraph} alt="incGraph" />
+              <Grid item xs={6} sm={3}>
+                <img src={scamMeter} className="w10rem" alt="scamMeter" />
               </Grid>
             </Grid>
           </div>
-        </div> */}
+
+          <div className="social-mobile2">
+            <img src={scamscanimg} className="w100pro" alt="scamscanimg" />
+            <button className="green-btn w100pro mt15">Join</button>
+            <img src={scamMeter} className="w100pro mt15" alt="scamMeter" />
+          </div>
+        </div>
+
         <section id="Tokenomics">
           <div className="container-fluid">
             <div className="heading row">
-              <h2 className="somatic-font">Tokenomics</h2>
+              <h2 className="somatic-font fs40">Tokenomics</h2>
             </div>
-            <div className="s5-bonobo-content-main-block">
+            <div className="s5-bonobo-content-main-block s5-bonobo-pc">
               <Grid container spacing={3}>
-                <Grid item xs={6} sm={5}>
+                <Grid item sm={5}>
                   <div className="s5-bonobo-content-block-1">
-                    <img src={s5_block1} alt="s5_block1" />
-                    <img src={s5_block2} alt="s5_block2" />
+                    <img src={s5_block1} className="w25rem" alt="s5_block1" />
+                    <img src={s5_block2} className="w25rem" alt="s5_block2" />
                   </div>
                 </Grid>
-                <Grid item xs={6} sm={4}>
+                <Grid item sm={5}>
                   <div className="s5-bonobo-content-block-2">
                     <div className="bonobo-head-svg-block">
                       <img className="face" src={bonobo_face_png} alt="bonobo_face" />
@@ -360,38 +382,38 @@ function LandingPage2() {
                       />
                     </div> 
                     <div className="card-1 p40 bg-gray-green">
-                      <div className="fs30 somatic-font">
+                      <div className="fs16 somatic-font">
                         Total Supply - <span className="font-yellow">100%</span>
                       </div>
-                      <div className="fs30 somatic-font">
+                      <div className="fs16 somatic-font">
                         <span className="font-yellow">7,900,000,000</span> Token
                       </div>
 
-                      <div className="fs30 somatic-font mt15">
+                      <div className="fs16 somatic-font mt15">
                         Airdrop - <span className="font-yellow">20%</span>
                       </div>
-                      <div className="fs30 somatic-font">
+                      <div className="fs16 somatic-font">
                         <span className="font-yellow">1,580,000,000</span> Token
                       </div>
                       
-                      <div className="fs30 somatic-font mt15">
+                      <div className="fs16 somatic-font mt15">
                         Public Sale - <span className="font-yellow">62.56%</span>
                       </div>
-                      <div className="fs30 somatic-font">
+                      <div className="fs16 somatic-font">
                         <span className="font-yellow">4,942,240,000</span> Token
                       </div>
 
-                      <div className="fs30 somatic-font mt15">
+                      <div className="fs16 somatic-font mt15">
                         Liquidity - <span className="font-yellow">15.64%</span>
                       </div>
-                      <div className="fs30 somatic-font">
+                      <div className="fs16 somatic-font">
                         <span className="font-yellow">1,235,560,000</span> Token
                       </div>
 
-                      <div className="fs30 somatic-font mt15">
+                      <div className="fs16 somatic-font mt15">
                         Unicrypt Fee - <span className="font-yellow">1.8%</span>
                       </div>
-                      <div className="fs30 somatic-font">
+                      <div className="fs16 somatic-font">
                         <span className="font-yellow">142,200,000</span> Token
                       </div>
                     </div>
@@ -399,51 +421,49 @@ function LandingPage2() {
                 </Grid>
               </Grid>
             </div>
+            <div className="s5-bonobo-mobile">
+              <img src={s5_block1} className="w100pro" alt="s5_block1" />
+              <img src={s5_block2} className="w100pro" alt="s5_block2" />
+              <div className="p40 bg-gray-green s5-bonobo-mobile3">
+                <div className="somatic-font">
+                  Total Supply - <span className="font-yellow">100%</span>
+                </div>
+                <div className="somatic-font">
+                  <span className="font-yellow">7,900,000,000</span> Token
+                </div>
+
+                <div className="somatic-font mt15">
+                  Airdrop - <span className="font-yellow">20%</span>
+                </div>
+                <div className="somatic-font">
+                  <span className="font-yellow">1,580,000,000</span> Token
+                </div>
+                
+                <div className="somatic-font mt15">
+                  Public Sale - <span className="font-yellow">62.56%</span>
+                </div>
+                <div className="somatic-font">
+                  <span className="font-yellow">4,942,240,000</span> Token
+                </div>
+
+                <div className="somatic-font mt15">
+                  Liquidity - <span className="font-yellow">15.64%</span>
+                </div>
+                <div className="somatic-font">
+                  <span className="font-yellow">1,235,560,000</span> Token
+                </div>
+
+                <div className="somatic-font mt15">
+                  Unicrypt Fee - <span className="font-yellow">1.8%</span>
+                </div>
+                <div className="somatic-font">
+                  <span className="font-yellow">142,200,000</span> Token
+                </div>
+              </div>
+              <img src={s5_block4} className="w100pro" alt="s5_block4" />
+            </div>
           </div>
         </section>
-        <div className="social-info-block">
-          <div className="content">
-            <div className="content-block">
-              <div className="coin-card">
-                <div className="coin-svg">
-                  <img src={coin_svg} alt="coin_svg" />
-                </div>
-                <div className="txt-heading">
-                  Anti-Whale
-                  <br />
-                  Measures
-                </div>
-                <div className="txt-content">
-                  <p>
-                    Transfers more than 0.5% (current ratio) of the total supply
-                    will be rejected. As the total supply grows, this ratio will
-                    be reduced. Deposit or withdraw tokens to the farms will not
-                    be subject to this restriction.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="content-block">
-              <div className="speedometer-card">
-                <div className="speedometer-svg">
-                  <img src={speedometer_svg} alt="speedometer_svg" />
-                </div>
-                <div className="txt-heading">
-                  Rug <br />
-                  proof
-                </div>
-                <div className="txt-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus malesuada iaculis bibendum. Integer et erat interdum
-                    sapien commodo fringilla ut sed nisi. Pellentesque efficitur
-                    tempus lectus.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <section>
           <div className="content">
             <div className="s5-bonobo-heading-block">
@@ -549,6 +569,109 @@ function LandingPage2() {
                   <div className="step-content">
                     <p>Enter the amount you want to buy and swap away!</p>
                     <p>Remember to have enough BNB for gas fees!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Roadmap">
+          <div className="content">
+            <div className="s9-bonobo-heading-block">
+              <div>
+                <div className="main somatic-font">Roadmap</div>
+              </div>
+            </div>
+
+            <div className="content-card-blocks row">
+              <div className="content-card-block-1 col-6">
+                <div className="content-block-1-card-1 card">
+                  <div>
+                    <div> 2021 Q3 </div>
+                    <ul>
+                      <li>BSC checker audit</li>
+                      <li>Release Bonobo easy meme | comic maker Ai & PSD</li>
+
+                      <li>
+                        Start El Bonobo’s Adventures Comic Strip competition
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="content-block-1-card-2 card">
+                  <div>
+                    <div> 2022 Q1</div>
+                    <ul>
+                      <li>Add El Bonobo Team members from community</li>
+
+                      <li>First Mission: Rescue El bonobo’s friends</li>
+                      <li>Start album of rescued animals</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="content-block-1-card-3 card">
+                  <div>
+                    <div> 2022 Q3</div>
+                    <ul>
+                      <li>Finalize DAO smart contracts with community</li>
+
+                      <li>Semi DAO new developer participation</li>
+
+                      <li>First ticket to meet El Bonobo’s family in the DRC</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="content-card-block-2 col-6">
+                <div className="content-block-2-card-1 card">
+                  <div>
+                    <div>2021 Q2</div>
+                    <ul>
+                      <li>Launch Website</li>
+                      <li>Token Launch on Pancake Swap</li>
+
+                      <li>Start social networking community and marketing</li>
+                      <li>Dashboard implementation</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="content-block-2-card-2 card">
+                  <div>
+                    <div> 2021 Q4</div>
+                    <ul>
+                      <li>Introduce El Bonobo’s family</li>
+
+                      <li>Pool Conservation Ideas from community</li>
+
+                      <li>New listing locations</li>
+                      <li>NFT El Bonobo’s Adventures Comic Strips</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="content-block-2-card-3 card">
+                  <div>
+                    <div> 2022 Q2</div>
+                    <ul>
+                      <li>Doxing. Team reveal</li>
+
+                      <li>Define DAO smart agreements</li>
+
+                      <li>Audit bonobo conservation and rescue missions</li>
+
+                      <li>Enhance community and conservation engagement</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="content-block-2-card-4 card">
+                  <div>
+                    <div> 2022 Q4</div>
+                    <ul>
+                      <li>Semi DAO review | Audit</li>
+
+                      <li>Full DAO | All power goes to community</li>
+
+                      <li>Anoint El Bonobo as new King on our Planet of Apes</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -700,208 +823,26 @@ function LandingPage2() {
             </div>
           </div>
         </section>
-        <section id="Roadmap">
-          <div className="content">
-            <div className="s9-bonobo-heading-block">
-              <div>
-                <div className="main somatic-font">Roadmap</div>
-              </div>
-            </div>
-
-            <div className="content-card-blocks row">
-              <div className="content-card-block-1 col-6">
-                <div className="content-block-1-card-1 card">
-                  <div>
-                    <div> 2021 Q3 </div>
-                    <ul>
-                      <li>BSC checker audit</li>
-                      <li>Release Bonobo easy meme | comic maker Ai & PSD</li>
-
-                      <li>
-                        Start El Bonobo’s Adventures Comic Strip competition
-                      </li>
-                    </ul>
-                  </div>
+        <div className="social-network-block">
+          <div className="social-pc2">
+            <Grid container spacing={3}>
+              <Grid item xs={6} sm={4}>
+                <img src={scamscanimg} className="w20rem" alt="scamscanimg" />
+              </Grid>
+              <Grid item xs={6} sm={3}>
+                <div className="align-center">
+                  <button className="green-btn w180">Join</button>
                 </div>
-                <div className="content-block-1-card-2 card">
-                  <div>
-                    <div> 2022 Q1</div>
-                    <ul>
-                      <li>Add El Bonobo Team members from community</li>
-
-                      <li>First Mission: Rescue El bonobo’s friends</li>
-                      <li>Start album of rescued animals</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="content-block-1-card-3 card">
-                  <div>
-                    <div> 2022 Q3</div>
-                    <ul>
-                      <li>Finalize DAO smart contracts with community</li>
-
-                      <li>Semi DAO new developer participation</li>
-
-                      <li>First ticket to meet El Bonobo’s family in the DRC</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="content-card-block-2 col-6">
-                <div className="content-block-2-card-1 card">
-                  <div>
-                    <div>2021 Q2</div>
-                    <ul>
-                      <li>Launch Website</li>
-                      <li>Token Launch on Pancake Swap</li>
-
-                      <li>Start social networking community and marketing</li>
-                      <li>Dashboard implementation</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="content-block-2-card-2 card">
-                  <div>
-                    <div> 2021 Q4</div>
-                    <ul>
-                      <li>Introduce El Bonobo’s family</li>
-
-                      <li>Pool Conservation Ideas from community</li>
-
-                      <li>New listing locations</li>
-                      <li>NFT El Bonobo’s Adventures Comic Strips</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="content-block-2-card-3 card">
-                  <div>
-                    <div> 2022 Q2</div>
-                    <ul>
-                      <li>Doxing. Team reveal</li>
-
-                      <li>Define DAO smart agreements</li>
-
-                      <li>Audit bonobo conservation and rescue missions</li>
-
-                      <li>Enhance community and conservation engagement</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="content-block-2-card-4 card">
-                  <div>
-                    <div> 2022 Q4</div>
-                    <ul>
-                      <li>Semi DAO review | Audit</li>
-
-                      <li>Full DAO | All power goes to community</li>
-
-                      <li>Anoint El Bonobo as new King on our Planet of Apes</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </Grid>
+              <Grid item xs={6} sm={3}>
+                <img src={scamMeter} className="w10rem" alt="scamMeter" />
+              </Grid>
+            </Grid>
           </div>
-        </section>
-        <section id="Charity">
-          {/* <div className="content">
-            <div className="s10-bonobo-content-card float-left">
-              <strong className="linear_gradient_font_color">MORE ABOUT</strong>
-              <h2 className="linear_gradient_font_color2">Charity</h2>
-              <p>
-                Charity to the El Bonobo Charity goes towards helping the less
-                than 50,000 bonobos left in the world. Bonobos share 98.7% of
-                their DNA with humans. Charity help in rescuing orphaned bonobos
-                whose family has been killed for bushmeat or wild animals. They
-                are then nursed by professionals who will release them into the
-                wild when possible. Some bonobos lose their ability to survive in
-                the wild so have to be taken care for by caregivers for the rest
-                of their lives. A large sum of your Charity will go to education
-                and community development. Human poverty induces the hunting of
-                bonobos for meat. Through <b>awareness programs </b> you will help
-                save the lives of many bonobos and other endangered apes.
-              </p>
-              <p>
-                The <b>El Bonobo community</b> will participating in how the
-                Charity are used. Furthermore, the community will discuss future
-                implementations for how to fund for more Charity, such as
-                possible royalties from El Bonobo comic strip NFTs, and other
-                fundraisers. A holistic approach to helping Bonobos will be
-                addressed in order to identify the best practice and long lasting
-                charity ecosystem. These would target education, conservation,
-                awareness, rescue and food chain initiatives.
-              </p>
-              <p>
-                Voting will be held over discord. Proposals can be done through
-                all available social media.
-              </p>
-              <p>
-                A portion of Charity only once approved by the community can be
-                put towards new dashboard features to help increase token value
-                and conservation efforts.
-              </p>
-              <a
-                href="https://www.notion.so/tokenfactory/Website-5953f52f3ba44c9eba362a556eaa2ebb"
-                target="blank"
-              >
-                <button className="yellow-btn">MAKE Charity</button>
-              </a>
-            </div>
-            <div className="monkey float-right">
-              <img src={monkeyy} alt="" />
-            </div>
-          </div> */}
-        </section>
-        <section id="Dashboard">
-          <div className="content">
-            <div className="s11-block">
-              <div className="s11-bonobo-content-card float-left">
-                <strong className="linear_gradient_font_color">OUR NEW</strong>
-                <h2 className="linear_gradient_font_color2">Dashboard</h2>
-                <p>
-                  A slick dashboard that a monkey can understand will be
-                  implemented with ideas from the community and professionals. El
-                  Bonobo dashboard launches with transaction data including,
-                  Charity, and token data. Over time more tools will be
-                  available through the dashboard.
-                </p>
-                <p>
-                  El Bonobo dashboard aims to deliver the best information for the
-                  community. Feedback and ideas from the community will be the
-                  driving factor in the El Bonobo Dashboard.
-                </p>
-              </div>
-              <div className="s11-dashboard-img-block float-left">
-                <img src={S11} alt="S11" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <div className="section-12" id="NFT">
-          <div className="main">
-            <div className="s12-bonobo-content-card loat-left">
-              <strong className="linear_gradient_font_color">El Bonobo Comic Strip</strong>
-              <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">NFT</span> Competition</h2>
-              <p>
-                El Bonobo mascot illustration vector files are available for the
-                community to test out their humor and creativeness. The best comic
-                strip voted by the community will be NFTd as a reward! The comic
-                creator will own the NFT completely.
-              </p>
-            </div>
-            <div className="s12-vector-block float-right">
-              <div className="col-4">
-                <img src={s12_1} alt="" />
-                <img src={s12_2} alt="" />
-              </div>
-              <div className="col-4">
-                <img src={s12_3} alt="" />
-              </div>
-              <div className="col-4">
-                <img src={s12_4} alt="" />
-                <img src={s12_5} alt="" />
-              </div>
-            </div>
+          <div className="social-mobile2">
+            <img src={scamscanimg} className="w100pro" alt="scamscanimg" />
+            <button className="green-btn w100pro mt15">Join</button>
+            <img src={scamMeter} className="w100pro mt15" alt="scamMeter" />
           </div>
         </div>
         <section id="team">
@@ -960,9 +901,73 @@ function LandingPage2() {
             </div>
           </div>
         </section>
-         <div className="social-network-bloc">
-          dsdfsdf
+        <div className="social-network-block">
+          <div className="social-pc2">
+            <Grid container spacing={3}>
+              <Grid item xs={6} sm={4}>
+                <img src={scamscanimg} className="w20rem" alt="scamscanimg" />
+              </Grid>
+              <Grid item xs={6} sm={3}>
+                <div className="align-center">
+                  <button className="green-btn w180">Join</button>
+                </div>
+              </Grid>
+              <Grid item xs={6} sm={3}>
+                <img src={scamMeter} className="w10rem" alt="scamMeter" />
+              </Grid>
+            </Grid>
+          </div>
+          <div className="social-mobile2">
+            <img src={scamscanimg} className="w100pro" alt="scamscanimg" />
+            <button className="green-btn w100pro mt15">Join</button>
+            <img src={scamMeter} className="w100pro mt15" alt="scamMeter" />
+          </div>
         </div>
+      </div>
+      <div className="footer">
+          <div className="content">
+            <Grid container spacing={3}>
+              <Grid item xs={6} sm={7}>
+                <img src={ftitle} className="w20rem" alt="ftitle" />
+                <p className="footerP">El Bonobo is as community driven, decentralized Marketing Launchpad and ScamScan Audit Service.</p>
+                <ul className="symbols footer-symbol">
+                  <li className="symbol"><Link to={'https://twitter.com'}><img className="symbolimg mr5" src={twitterIcon} alt="twitterIcon"/></Link></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={redditIcon} alt="redditIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={telegramIcon} alt="telegramIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={mediumIcon} alt="mediumIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={discordIcon} alt="discordIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={facebookIcon} alt="facebookIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={instagramIcon} alt="instagramIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={youtubuIcon} alt="youtubuIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={tiktokIcon} alt="tiktokIcon"/></li>
+                  <li className="symbol"><img className="symbolimg mr5" src={githubIcon} alt="githubIcon"/></li>
+                </ul>
+              </Grid>
+              <Grid item xs={6} sm={5}>
+                <ul className="footerUl">
+                  <li>
+                    <span className="font-bold">General</span><br/>
+                    <span>F.A.Q</span><br/>
+                    <span>Contact</span><br/>
+                  </li>
+                  <li>
+                    <span className="font-bold">Resources</span><br/>
+                    <span>Technology</span><br/>
+                    <span>Papers</span><br/>
+                  </li>
+                  <li>
+                    <span className="font-bold">Thanks to</span><br/>
+                    <span>Hackmd</span><br/>
+                    <span>Binance</span><br/>
+                    <span>Cosmos Network</span><br/>
+                    <span>Figma</span><br/>
+                    <span>Webtorrent</span><br/>
+                    <span>Fleek</span><br/>
+                  </li>
+                </ul>
+              </Grid>
+            </Grid>
+          </div>
       </div>
     </div>
   )
