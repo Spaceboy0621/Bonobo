@@ -29,10 +29,11 @@ import thirdText from "./img/thirdText.svg"
 import incGraph from "./img/increaseGraph.svg"
 import s5_block1 from "./img/s5_block1.svg"
 import s5_block2 from "./img/s5_block2.svg"
-import s5_block4 from "./img/s5_block4.svg"
+// import s5_block4 from "./img/s5_block4.svg"
 import conB from "./img/continueBtn.svg"
 import joinB from "./img/joinBtn.svg"
 import ftitle from "./img/footertitle.svg"
+import lastcoinbtn from "./img/lastcoinbtn.svg"
 
 import coins from "./img/coins.svg"
 import bonobo from "./img/bonobo.png"
@@ -50,6 +51,10 @@ import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
 import team4 from "./img/team4.png"
 import welcomeText from "./img/welcome.svg"
+import yellow9mid from "./img/yellow9mid.svg"
+import yellow9left from "./img/yellow9left.svg"
+// import infobtn from "./img/infobtn.svg"
+// import roadmap_mobile from "./img/roadmap_mobile.svg"
 import { Link } from 'react-scroll'
 
 function LandingPage2() {
@@ -64,7 +69,7 @@ function LandingPage2() {
       return
     }
     var unitLeft =
-      winWidth > 767 ? ((14.27 + 2.03) / 100) * winWidth : 0.9 * winWidth
+      winWidth > 767 ? ((14.27 + 2.03) / 100) * winWidth : 0.7 * winWidth
     var val = moveleft - unitLeft
     setLeft(val)
     setNum(numLeft + 1)
@@ -74,7 +79,7 @@ function LandingPage2() {
       return
     }
     var unitLeft =
-      winWidth > 767 ? ((14.27 + 2.03) / 100) * winWidth : 0.9 * winWidth
+      winWidth > 767 ? ((14.27 + 2.03) / 100) * winWidth : 0.7 * winWidth
     var val = moveleft + unitLeft
     setLeft(val)
     setNum(numLeft - 1)
@@ -221,44 +226,45 @@ function LandingPage2() {
           </div>
         </section>
         <section>
-          <div className="s2-bonobo-content-card float-left">
-            <div className="content">
-              {/* <img src={secondText} className="secondText" alt="secondText"/> */}
-              <div className="s2-bonobo-content-left-top">
-                <h1 className="somatic-font fs30">What is El Bonobo?</h1>
-                <p className="nirmala-font fs24">BONOBO coin is fun and bold attempt to use cryptocurrency to improve the lives of both humans and our fellow inhabitants on earth, in a decentralized manner. </p>
-                <br />
-                <p className="nirmala-font fs24">It is also a social experiment that will test the ability of 
-                Distributed Anonymous Organizations (DAO) to perform 
-                their remits more effectively than traditional organizations.</p>
-              </div>
+          <div className="main-container">
+            <div className="s2-bonobo-content-card float-left mt30">
+              <div className="content">
+                {/* <img src={secondText} className="secondText" alt="secondText"/> */}
+                <div className="s2-bonobo-content-left-top">
+                  <h1 className="somatic-font fs30">What is El Bonobo?</h1>
+                  <p className="nirmala-font fs24">BONOBO coin is fun and bold attempt to use cryptocurrency to improve the lives of both humans and our fellow inhabitants on earth, in a decentralized manner. </p>
+                  <p className="nirmala-font fs24 mt20">It is also a social experiment that will test the ability of 
+                  Distributed Anonymous Organizations (DAO) to perform 
+                  their remits more effectively than traditional organizations.</p>
+                </div>
 
-              <div className="s2-bonobo-content-left-down mt27">
-                <h1 className="somatic-font">Join us!</h1>
-                <li className="nirmala-font">We’re building a vibrant community that is fun and comes together to improve their lives and those of others, whilst working to raise awareness and funds for wildlife conservation. </li>
-                <br />
-                <li className="nirmala-font">A professional and talented team committed to making this vision a reality. </li>
-                <br />
-                <li className="nirmala-font">Transparent technology implemented using best practice. There can be no “rug-pull”. </li>
-                <br />
-                <li className="nirmala-font">Tokenomics that make sense.</li>
-                <br />
+                <div className="s2-bonobo-content-left-down mt27">
+                  <h1 className="somatic-font">Join us!</h1>
+                  <li className="nirmala-font mt20">We’re building a vibrant community that is fun and comes together to improve their lives and those of others, whilst working to raise awareness and funds for wildlife conservation. </li>
 
-                <p className="nirmala-font">There future of El Bonobo is full DAO. Creating an effective conservation structure is the aim.</p><br />
-                <p className="nirmala-font">And the fun doesn’t end there. A meme maker package is available for creativity and humor. There is also a comic strip competition where the winning strips are turned into NFT for the creator to gain more rewards. Moreover, adventure and travel awaits those that want to visit conservation efforts around the world.</p>
+                  <li className="nirmala-font mt20">A professional and talented team committed to making this vision a reality. </li>
+                  <li className="nirmala-font mt20">Transparent technology implemented using best practice. There can be no “rug-pull”. </li>
+                  
+                  <li className="nirmala-font mt20">Tokenomics that make sense.</li>
+                 
+
+                  <p className="nirmala-font mt20">There future of El Bonobo is full DAO. Creating an effective conservation structure is the aim.</p><br />
+                  <p className="nirmala-font">And the fun doesn’t end there. A meme maker package is available for creativity and humor. There is also a comic strip competition where the winning strips are turned into NFT for the creator to gain more rewards. Moreover, adventure and travel awaits those that want to visit conservation efforts around the world.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="imgs float-left">
-            <img src={g6} width="50%" alt="g6s2" className="s2-bonobo-right-top1-img" />
-            <img src={g71} width="50%" alt="g7s2" className="s2-bonobo-right-top2-img" />
-            <img src={leaf_sun} className="s2-bonobo-right-top3-img leftsun" width="100%" alt="leftsun" />
+
+            <div className="imgs float-left">
+              <img src={g6} width="100%" alt="g6s2" className="s2-bonobo-right-top1-img" />
+              <img src={g71} width="100%" alt="g7s2" className="s2-bonobo-right-top2-img" />
+              <img src={leaf_sun} className="s2-bonobo-right-top3-img leftsun" width="100%" alt="leftsun" />
+            </div>
           </div>
         </section>
         <div className="social-network-block">
           <div className="social-pc">
           <Grid container spacing={3}>
-            <Grid item xs={6} sm={4}>
+            <Grid item xs={6} sm={5}>
               <img src={thirdText} className="w20rem" alt="thirdText" />
             </Grid>
             <Grid item xs={6} sm={3}>
@@ -267,7 +273,7 @@ function LandingPage2() {
               </div>
             </Grid>
             <Grid item xs={6} sm={3}>
-              <img src={incGraph} className="w10rem" alt="incGraph" />
+              <img src={incGraph} className="w10rem float-right" alt="incGraph" />
             </Grid>
           </Grid>
           </div>
@@ -275,7 +281,6 @@ function LandingPage2() {
           <div className="social-mobile">
             <img src={thirdText} className="w100pro" alt="thirdText" />
             <button className="green-btn w100pro mt15">Join</button>
-            <img src={incGraph} className="w100pro mt15" alt="incGraph" />
           </div>
         </div>
         <section>
@@ -335,7 +340,7 @@ function LandingPage2() {
           </div>
         </section>
         <div className="social-network-block">
-          <div className="social-pc2">
+          <div className="social-pc2 scanscanpc2">
             <Grid container spacing={3}>
               <Grid item xs={6} sm={4}>
                 <img src={scamscanimg} className="w20rem" alt="scamscanimg" />
@@ -354,14 +359,13 @@ function LandingPage2() {
           <div className="social-mobile2">
             <img src={scamscanimg} className="w100pro" alt="scamscanimg" />
             <button className="green-btn w100pro mt15">Join</button>
-            <img src={scamMeter} className="w100pro mt15" alt="scamMeter" />
           </div>
         </div>
 
         <section id="Tokenomics">
           <div className="container-fluid">
-            <div className="heading row">
-              <h2 className="somatic-font fs40">Tokenomics</h2>
+            <div className="heading row ">
+              <h2 className="somatic-font fs72 mt30">Tokenomics</h2>
             </div>
             <div className="s5-bonobo-content-main-block s5-bonobo-pc">
               <Grid container spacing={3}>
@@ -460,13 +464,12 @@ function LandingPage2() {
                   <span className="font-yellow">142,200,000</span> Token
                 </div>
               </div>
-              <img src={s5_block4} className="w100pro" alt="s5_block4" />
             </div>
           </div>
         </section>
         <section>
           <div className="content">
-            <div className="s5-bonobo-heading-block">
+            <div className="s5-bonobo-heading-block mt30">
               <div>
                 <div className="sub somatic-font">HOW TO BUY</div>
                 <div className="main omatic-font">BONOBOs</div>
@@ -790,21 +793,6 @@ function LandingPage2() {
                   </div>
                   <div className={`${numLeft === 2 ? "overlay" : ""}`}></div>
                 </div>
-                <div className="card">
-                  <div className="cards-header">
-                    <div className="d-flex justify-content-start text-center">
-                      <img src={calendar_png} alt="" />
-                      <span>20 May, 2020</span>
-                    </div>
-                  </div>
-                  <div className="cards-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus malesuada iaculis bibendum
-                    </p>
-                  </div>
-                  <div className={`${numLeft === 3 ? "overlay" : ""}`}></div>
-                </div>
               </div>
             </div>
             <div className="btns">
@@ -827,22 +815,36 @@ function LandingPage2() {
           <div className="social-pc2">
             <Grid container spacing={3}>
               <Grid item xs={6} sm={4}>
-                <img src={scamscanimg} className="w20rem" alt="scamscanimg" />
+                <img src={yellow9left} className="w20rem" alt="yellow9left" />
+                <p className="color-darkgreen nirmala-font fs24">
+                  1% tax fee  of every transaction will be donated to a charity you vote for.
+                </p>
+                <button className="charitybtn">Info</button>
               </Grid>
               <Grid item xs={6} sm={3}>
-                <div className="align-center">
-                  <button className="green-btn w180">Join</button>
+                <img src={yellow9mid} className="w20rem" alt="yellow9mid" />
+              </Grid>
+              <Grid item xs={6} sm={5}>
+                <div className="float-right align-right">
+                  <span className="fss30 nirmala-font color-darkgreen">Wallet</span><br />
+                  <input type="text" className="color-darkgreen border-radius input-social align-right mt20" placeholder="USD received"/>
+                  <input type="text" className="color-darkgreen border-radius input-social align-right mt20" placeholder="USD received"/>
                 </div>
-              </Grid>
-              <Grid item xs={6} sm={3}>
-                <img src={scamMeter} className="w10rem" alt="scamMeter" />
               </Grid>
             </Grid>
           </div>
           <div className="social-mobile2">
-            <img src={scamscanimg} className="w100pro" alt="scamscanimg" />
-            <button className="green-btn w100pro mt15">Join</button>
-            <img src={scamMeter} className="w100pro mt15" alt="scamMeter" />
+            <img src={yellow9left} className="w100pro" alt="yellow9left" />
+            <p className="color-darkgreen nirmala-font fs24">
+              1% tax fee  of every transaction will be donated to a charity you vote for.
+            </p>
+            <button className="charitybtn">Info</button>
+            <img src={yellow9mid} className="w100pro mt30" alt="yellow9mid" />
+            <div className="float-right align-right ">
+              <span className="fss30 nirmala-font color-darkgreen w100pro responseRight">Wallet</span><br />
+              <input type="text" className="color-darkgreen border-radius input-social align-right mt20" placeholder="USD received"/>
+              <input type="text" className="color-darkgreen border-radius input-social align-right mt20" placeholder="USD received"/>
+            </div>
           </div>
         </div>
         <section id="team">
@@ -850,9 +852,11 @@ function LandingPage2() {
             <div className="s13-bonobo-content-card float-left">
               <div>
                 <h2 className="">Team</h2>
+                <div className="team-mobile">
+                  <img className="joinBtn w100pro" src={joinB} alt="joinB" />
+                </div>
                 <span className="mt27 fs25 nirmala-font"><b>About us</b></span>
-                <br />
-                <br />
+                
                 <p className="fs25 nirmala-font">
                 We are a team of independent, hardworking entrepreneurs from different expertise.
                 </p>
@@ -876,7 +880,7 @@ function LandingPage2() {
                 <img src={conB} alt="conB" />
               </div>
             </div>
-            <div className="s13-img-block float-left">
+            <div className="s13-img-block float-right">
               <div className="fline">
                 <img src={team1} alt="team1" />
                 <strong>The</strong>
@@ -904,69 +908,149 @@ function LandingPage2() {
         <div className="social-network-block">
           <div className="social-pc2">
             <Grid container spacing={3}>
-              <Grid item xs={6} sm={4}>
-                <img src={scamscanimg} className="w20rem" alt="scamscanimg" />
+              <Grid item xs={6} sm={6}>
+                <img src={lastcoinbtn} className="w20rem" alt="lastcoinbtn" />
+                <p className="color-darkgreen nirmala-font fs24">
+                We welcome everyone to contribute to the El Bonobo Curating Team. For transparency all spending will be accounted for and open to scrutiny. 
+                </p>
               </Grid>
-              <Grid item xs={6} sm={3}>
-                <div className="align-center">
-                  <button className="green-btn w180">Join</button>
+              <Grid item xs={6} sm={6}>
+                <div className="float-right align-center">
+                  <button className="charitybtn h3rem">Donate</button>
+                  <input type="text" className="color-darkgreen border-radius input-social align-right mt20" placeholder="USD received"/>
                 </div>
-              </Grid>
-              <Grid item xs={6} sm={3}>
-                <img src={scamMeter} className="w10rem" alt="scamMeter" />
               </Grid>
             </Grid>
           </div>
           <div className="social-mobile2">
-            <img src={scamscanimg} className="w100pro" alt="scamscanimg" />
-            <button className="green-btn w100pro mt15">Join</button>
-            <img src={scamMeter} className="w100pro mt15" alt="scamMeter" />
+            <img src={lastcoinbtn} className="w100pro" alt="lastcoinbtn" />
+            <p className="color-darkgreen nirmala-font fs24">
+            We welcome everyone to contribute to the El Bonobo Curating Team. For transparency all spending will be accounted for and open to scrutiny. 
+            </p>
+            <div className="float-right align-center">
+              <button className="charitybtn h3rem">Donate</button>
+              <input type="text" className="color-darkgreen border-radius input-social align-right mt20" placeholder="USD received"/>
+            </div>
           </div>
         </div>
       </div>
       <div className="footer">
           <div className="content">
-            <Grid container spacing={3}>
-              <Grid item xs={6} sm={7}>
-                <img src={ftitle} className="w20rem" alt="ftitle" />
-                <p className="footerP">El Bonobo is as community driven, decentralized Marketing Launchpad and ScamScan Audit Service.</p>
-                <ul className="symbols footer-symbol">
-                  <li className="symbol"><Link to={'https://twitter.com'}><img className="symbolimg mr5" src={twitterIcon} alt="twitterIcon"/></Link></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={redditIcon} alt="redditIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={telegramIcon} alt="telegramIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={mediumIcon} alt="mediumIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={discordIcon} alt="discordIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={facebookIcon} alt="facebookIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={instagramIcon} alt="instagramIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={youtubuIcon} alt="youtubuIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={tiktokIcon} alt="tiktokIcon"/></li>
-                  <li className="symbol"><img className="symbolimg mr5" src={githubIcon} alt="githubIcon"/></li>
-                </ul>
+            <div className="footer-pc">
+              <Grid container spacing={3}>
+                <Grid item xs={6} sm={7}>
+                  <img src={ftitle} className="w20rem" alt="ftitle" />
+                  <p className="footerP">El Bonobo is as community driven, decentralized Marketing Launchpad and ScamScan Audit Service.</p>
+                  <ul className="symbols footer-symbol">
+                    <li className="symbol"><Link to={'https://twitter.com'}><img className="symbolimg mr5" src={twitterIcon} alt="twitterIcon"/></Link></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={redditIcon} alt="redditIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={telegramIcon} alt="telegramIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={mediumIcon} alt="mediumIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={discordIcon} alt="discordIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={facebookIcon} alt="facebookIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={instagramIcon} alt="instagramIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={youtubuIcon} alt="youtubuIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={tiktokIcon} alt="tiktokIcon"/></li>
+                    <li className="symbol"><img className="symbolimg mr5" src={githubIcon} alt="githubIcon"/></li>
+                  </ul>
+                </Grid>
+                <Grid item xs={6} sm={5}>
+                  <ul className="footerUl">
+                    <li>
+                      <span className="font-bold">General</span><br/>
+                      <span>F.A.Q</span><br/>
+                      <span>Contact</span><br/>
+                    </li>
+                    <li>
+                      <span className="font-bold">Resources</span><br/>
+                      <span>Technology</span><br/>
+                      <span>Papers</span><br/>
+                    </li>
+                    <li>
+                      <span className="font-bold">Thanks to</span><br/>
+                      <span>Hackmd</span><br/>
+                      <span>Binance</span><br/>
+                      <span>Cosmos Network</span><br/>
+                      <span>Figma</span><br/>
+                      <span>Webtorrent</span><br/>
+                      <span>Fleek</span><br/>
+                    </li>
+                  </ul>
+                </Grid>
               </Grid>
-              <Grid item xs={6} sm={5}>
-                <ul className="footerUl">
-                  <li>
-                    <span className="font-bold">General</span><br/>
-                    <span>F.A.Q</span><br/>
-                    <span>Contact</span><br/>
-                  </li>
-                  <li>
-                    <span className="font-bold">Resources</span><br/>
-                    <span>Technology</span><br/>
-                    <span>Papers</span><br/>
-                  </li>
-                  <li>
-                    <span className="font-bold">Thanks to</span><br/>
-                    <span>Hackmd</span><br/>
-                    <span>Binance</span><br/>
-                    <span>Cosmos Network</span><br/>
-                    <span>Figma</span><br/>
-                    <span>Webtorrent</span><br/>
-                    <span>Fleek</span><br/>
-                  </li>
-                </ul>
+            </div>
+            <div className="footer-mobile align-center">
+              <img src={ftitle} className="w20rem " alt="ftitle" />
+              <p className="footerP w100pro">El Bonobo is as community driven, decentralized Marketing Launchpad and ScamScan Audit Service.</p>
+              <ul className="symbols footer-symbol">
+                <li className="symbol"><Link to={'https://twitter.com'}><img className="symbolimg mr5" src={twitterIcon} alt="twitterIcon"/></Link></li>
+                <li className="symbol"><img className="symbolimg mr5" src={redditIcon} alt="redditIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={telegramIcon} alt="telegramIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={mediumIcon} alt="mediumIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={discordIcon} alt="discordIcon"/></li>
+              </ul>
+              <ul className="symbols footer-symbol">
+                <li className="symbol"><img className="symbolimg mr5" src={facebookIcon} alt="facebookIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={instagramIcon} alt="instagramIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={youtubuIcon} alt="youtubuIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={tiktokIcon} alt="tiktokIcon"/></li>
+                <li className="symbol"><img className="symbolimg mr5" src={githubIcon} alt="githubIcon"/></li>
+              </ul>
+
+              <Grid container spacing={3}>
+                <Grid item xs={6} sm={6}>
+                  <ul className="footerUl">
+                    <li>
+                      <span className="font-bold">Thanks to</span><br/>
+                      <span>Hackmd</span><br/>
+                      <span>Binance</span><br/>
+                      <span>Cosmos Network</span><br/>
+                      <span>Figma</span><br/>
+                      <span>Webtorrent</span><br/>
+                      <span>Fleek</span><br/>
+                    </li>
+                  </ul>
+                </Grid>
+                <Grid item xs={6} sm={6}>
+                  <ul className="footerUl">
+                    <li>
+                      <span className="font-bold">General</span>
+                      <div className="clearfix"></div>
+                      <span>F.A.Q</span>
+                      <div className="clearfix"></div>
+                      <span>Contact</span>
+                      <div className="clearfix"></div>
+                      <span className="font-bold">Resources</span>
+                      <div className="clearfix"></div>
+                      <span>Technology</span>
+                      <div className="clearfix"></div>
+                      <span>Papers</span>
+                    </li>
+                  </ul>
+                </Grid>
               </Grid>
-            </Grid>
+              {/* <ul className="footerUl">
+                <li>
+                  <span className="font-bold">General</span><br/>
+                  <span>F.A.Q</span><br/>
+                  <span>Contact</span><br/>
+                </li>
+                <li>
+                  <span className="font-bold">Resources</span><br/>
+                  <span>Technology</span><br/>
+                  <span>Papers</span><br/>
+                </li>
+                <li>
+                  <span className="font-bold">Thanks to</span><br/>
+                  <span>Hackmd</span><br/>
+                  <span>Binance</span><br/>
+                  <span>Cosmos Network</span><br/>
+                  <span>Figma</span><br/>
+                  <span>Webtorrent</span><br/>
+                  <span>Fleek</span><br/>
+                </li>
+              </ul> */}
+            </div>
           </div>
       </div>
     </div>
