@@ -111,37 +111,37 @@ function LandingPage2() {
             <ul className="menutab">
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="BONOBO"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Whitepaper</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="Tokenomics"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Roadmap</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="Roadmap"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Marketing</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="ascasc"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Adult Service</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="ascascasc"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Charity</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="ascascasc"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Voting</Link></li>
@@ -149,7 +149,7 @@ function LandingPage2() {
                 <div className="connectBtn">
                 <Link
                 activeClass="active"
-                to="wefwef"
+                to="#id"
                 spy={true}
                 smooth={true}
               >Connect</Link>
@@ -184,7 +184,7 @@ function LandingPage2() {
           </div>
         </div>
       </div>
-      <div className="main-block">
+      <div className="main-block" id="BONOBO">
         <section>
           <div className="content">
             <div className="bonobo-content-card">
