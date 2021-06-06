@@ -124,19 +124,19 @@ function LandingPage2() {
               >Marketing</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="Roadmap"
+                to="ascasc"
                 spy={true}
                 smooth={true}
               >Adult Service</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="Roadmap"
+                to="ascascasc"
                 spy={true}
                 smooth={true}
               >Charity</Link></li>
               <li className="main_tab_pointer"><Link
                 activeClass="active"
-                to="Roadmap"
+                to="ascascasc"
                 spy={true}
                 smooth={true}
               >Voting</Link></li>
@@ -144,7 +144,7 @@ function LandingPage2() {
                 <div className="connectBtn">
                 <Link
                 activeClass="active"
-                to="Roadmap"
+                to="wefwef"
                 spy={true}
                 smooth={true}
               >Connect</Link>

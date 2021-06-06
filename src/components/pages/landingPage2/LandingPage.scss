@@ -440,9 +440,10 @@ section:nth-child(1) {
     display: flex;
     justify-content: center;
   }
+  margin: 0 auto;
   height: 52.688rem;
   background-size: 100% 100%;
-  width: 100%;
+  width: 70rem;
   @media (max-width: 767px) {
     background-size: cover;
     height: auto;
