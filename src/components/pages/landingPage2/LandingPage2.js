@@ -469,7 +469,7 @@ function LandingPage2() {
             <div className="s5-bonobo-heading-block">
               <div>
                 <div className="sub somatic-font">HOW TO BUY</div>
-                <div className="main omatic-font">El BONOBO’s</div>
+                <div className="main omatic-font">BONOBOs</div>
               </div>
             </div>
             <div className="bonobo-content-block">
