@@ -250,9 +250,9 @@ function LandingPage2() {
             </div>
           </div>
           <div className="imgs float-left">
-            <img src={g6} width="50%" alt="g6" className="s2-bonobo-right-top1-img" />
-            <img src={g71} width="50%" alt="g7" className="s2-bonobo-right-top2-img" />
-            <img className="leftsun" src={leaf_sun} className="s2-bonobo-right-top3-img" width="100%" alt="leftsun" />
+            <img src={g6} width="50%" alt="g6s2" className="s2-bonobo-right-top1-img" />
+            <img src={g71} width="50%" alt="g7s2" className="s2-bonobo-right-top2-img" />
+            <img src={leaf_sun} className="s2-bonobo-right-top3-img leftsun" width="100%" alt="leftsun" />
           </div>
         </section>
         <div className="social-network-block">
